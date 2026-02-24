@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import ScrollReveal from './ScrollReveal'
 import { useLang } from './LangContext'
@@ -6,17 +6,17 @@ import { useLang } from './LangContext'
 const posts = {
   fr: [
     {
-      category: '🚗 Automotive Embedded',
-      date: 'Juin 2025',
-      readTime: '8 min',
-      title: 'Implémenter un serveur UDS (ISO 14229) sur dsPIC33CK avec FreeRTOS',
+      category: 'Communication Embarquée',
+      date: 'Jan 2026',
+      readTime: '7 min',
+      title: 'CAN Bus de zéro sur STM32 : configuration, trames et débogage',
       excerpt:
-        "Retour d'expérience complet sur l'implémentation d'un serveur UDS sur CAN pendant mon stage chez EFI Automotive. Architecture des services, gestion mémoire sous FreeRTOS, watchdog matériel et validation avec Vector CANoe.",
-      tags: ['dsPIC33CK', 'FreeRTOS', 'UDS ISO 14229', 'CAN Bus', 'CANoe'],
+        "Comment configurer un périphérique bxCAN sur STM32 sans bibliothèque haut niveau : initialisation des registres, filtres d'acceptation, format des trames standard et étendu, gestion des erreurs et analyse avec un oscilloscope ou CANoe.",
+      tags: ['STM32', 'CAN Bus', 'C', 'bxCAN', 'Protocoles'],
       slug: '#blog',
     },
     {
-      category: '🐧 Embedded Linux',
+      category: 'Embedded Linux',
       date: 'Fév 2025',
       readTime: '10 min',
       title: 'Construire une image Linux embarquée avec Yocto Project sur Raspberry Pi',
@@ -26,7 +26,7 @@ const posts = {
       slug: '#blog',
     },
     {
-      category: '⚙️ RTOS',
+      category: 'RTOS',
       date: 'Nov 2024',
       readTime: '6 min',
       title: 'FreeRTOS vs Zephyr RTOS : quel OS embarqué pour votre projet ?',
@@ -38,17 +38,17 @@ const posts = {
   ],
   en: [
     {
-      category: '🚗 Automotive Embedded',
-      date: 'Jun 2025',
-      readTime: '8 min',
-      title: 'Implementing a UDS Server (ISO 14229) on dsPIC33CK with FreeRTOS',
+      category: 'Embedded Communication',
+      date: 'Jan 2026',
+      readTime: '7 min',
+      title: 'CAN Bus from Scratch on STM32: Configuration, Frames & Debugging',
       excerpt:
-        "Full write-up of implementing a UDS server over CAN during my internship at EFI Automotive. Service architecture, memory management under FreeRTOS, hardware watchdog and validation with Vector CANoe.",
-      tags: ['dsPIC33CK', 'FreeRTOS', 'UDS ISO 14229', 'CAN Bus', 'CANoe'],
+        'How to configure the bxCAN peripheral on STM32 without a high-level library: register initialisation, acceptance filters, standard and extended frame formats, error handling, and analysis with an oscilloscope or CANoe.',
+      tags: ['STM32', 'CAN Bus', 'C', 'bxCAN', 'Protocols'],
       slug: '#blog',
     },
     {
-      category: '🐧 Embedded Linux',
+      category: 'Embedded Linux',
       date: 'Feb 2025',
       readTime: '10 min',
       title: 'Building a Custom Embedded Linux Image with Yocto Project on Raspberry Pi',
@@ -58,7 +58,7 @@ const posts = {
       slug: '#blog',
     },
     {
-      category: '⚙️ RTOS',
+      category: 'RTOS',
       date: 'Nov 2024',
       readTime: '6 min',
       title: 'FreeRTOS vs Zephyr RTOS: Which Embedded OS for Your Project?',
@@ -205,7 +205,7 @@ export default function Blog() {
               {lbl.taglineDesc}
             </p>
           </div>
-          <a href="https://ta-embedded.com" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/company/ta-embedded/" target="_blank" rel="noopener noreferrer"
             className="btn-shimmer"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '.6rem',

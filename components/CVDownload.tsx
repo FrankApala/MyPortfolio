@@ -1,5 +1,7 @@
 'use client'
 
+import { Briefcase, GraduationCap, Trophy, Cpu, Download } from 'lucide-react'
+import type { ReactNode } from 'react'
 import ScrollReveal from './ScrollReveal'
 import { useLang } from './LangContext'
 
@@ -11,10 +13,10 @@ const t = {
     btn: 'Télécharger le CV (PDF)',
     note: 'Mis à jour — 2025',
     highlights: [
-      { icon: '💼', text: '3+ ans d\'expérience embarquée' },
-      { icon: '🎓', text: 'UTBM Ingénieur · ERASMUS RPTU' },
-      { icon: '🏆', text: 'Bourse Eiffel Excellence 2022–2025' },
-      { icon: '⚙️', text: 'FreeRTOS · Zephyr · Yocto · STM32' },
+      { icon: <Briefcase size={18} /> as ReactNode, text: "3+ ans d'expérience embarquée" },
+      { icon: <GraduationCap size={18} /> as ReactNode, text: 'UTBM Ingénieur · ERASMUS RPTU' },
+      { icon: <Trophy size={18} /> as ReactNode, text: 'Bourse Eiffel Excellence 2022–2025' },
+      { icon: <Cpu size={18} /> as ReactNode, text: 'FreeRTOS · Zephyr · Yocto · STM32' },
     ],
   },
   en: {
@@ -24,10 +26,10 @@ const t = {
     btn: 'Download CV (PDF)',
     note: 'Updated — 2025',
     highlights: [
-      { icon: '💼', text: '3+ years embedded experience' },
-      { icon: '🎓', text: 'UTBM Engineering · ERASMUS RPTU' },
-      { icon: '🏆', text: 'Eiffel Excellence Scholarship 2022–2025' },
-      { icon: '⚙️', text: 'FreeRTOS · Zephyr · Yocto · STM32' },
+      { icon: <Briefcase size={18} /> as ReactNode, text: '3+ years embedded experience' },
+      { icon: <GraduationCap size={18} /> as ReactNode, text: 'UTBM Engineering · ERASMUS RPTU' },
+      { icon: <Trophy size={18} /> as ReactNode, text: 'Eiffel Excellence Scholarship 2022–2025' },
+      { icon: <Cpu size={18} /> as ReactNode, text: 'FreeRTOS · Zephyr · Yocto · STM32' },
     ],
   },
 }
@@ -104,7 +106,7 @@ export default function CVDownload() {
                   animation: `tagPop 0.5s cubic-bezier(0.16, 1, 0.3, 1) ${0.1 * (i + 1)}s both`,
                 }}
               >
-                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>{icon}</span>
+                <span style={{ color:'var(--cyan)', flexShrink: 0, display:'flex', alignItems:'center' }}>{icon}</span>
                 <span>{text}</span>
               </div>
             ))}
@@ -129,7 +131,7 @@ export default function CVDownload() {
               letterSpacing: '.01em',
             }}
           >
-            <span style={{ fontSize: '1.3rem', animation: 'downloadBounce 2s ease-in-out infinite' }}>⬇</span>
+            <span style={{ animation: 'downloadBounce 2s ease-in-out infinite', display:'flex', alignItems:'center' }}><Download size={22} /></span>
             {tx.btn}
           </a>
 

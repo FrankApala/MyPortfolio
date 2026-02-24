@@ -90,7 +90,7 @@ export default function Navbar() {
           })}
           {/* TA Embedded — external company link */}
           <li>
-            <a href="https://ta-embedded.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/company/ta-embedded/" target="_blank" rel="noopener noreferrer"
               className="btn-shimmer"
               style={{
                 textDecoration: 'none', fontSize: '.82rem', fontWeight: 700,
@@ -161,7 +161,7 @@ export default function Navbar() {
               {lang === 'fr' ? fr : en}
             </a>
           ))}
-          <a href="https://ta-embedded.com" target="_blank" rel="noopener noreferrer" onClick={closeMobile}
+          <a href="https://www.linkedin.com/company/ta-embedded/" target="_blank" rel="noopener noreferrer" onClick={closeMobile}
             style={{ fontSize: '1rem', fontWeight: 800, color: '#d4a017', textDecoration: 'none', padding: '.75rem 0', marginTop: '.25rem' }}
           >
             TA Embedded ↗

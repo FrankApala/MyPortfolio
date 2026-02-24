@@ -1,5 +1,6 @@
 ﻿'use client'
 
+import { Mail, Phone, Linkedin, MapPin } from 'lucide-react'
 import ScrollReveal from './ScrollReveal'
 import { useLang } from './LangContext'
 
@@ -25,10 +26,10 @@ const t = {
 }
 
 const contacts = [
-  { href: 'mailto:frankapala75@gmail.com', icon: '✉️', label: 'Email', value: 'frankapala75@gmail.com' },
-  { href: 'tel:+33751416922', icon: '📞', label: 'Phone', value: '+33 7 51 41 69 22' },
+  { href: 'mailto:frankapala75@gmail.com', icon: <Mail size={20} />, label: 'Email', value: 'frankapala75@gmail.com' },
+  { href: 'tel:+33751416922', icon: <Phone size={20} />, label: 'Phone', value: '+33 7 51 41 69 22' },
   { href: 'https://github.com/FrankApala', icon: <GitHubIcon/>, label: 'GitHub', value: 'github.com/FrankApala', external: true },
-  { href: 'https://linkedin.com/in/tontsa', icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/tontsa', external: true },
+  { href: 'https://linkedin.com/in/tontsa', icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'linkedin.com/in/tontsa', external: true },
 ]
 
 export default function Contact() {
@@ -42,12 +43,12 @@ export default function Contact() {
       <ScrollReveal>
         <div style={{ maxWidth:'600px', margin:'3rem auto 0', background:'var(--bg-card)', border:'1px solid var(--blue-border)', borderRadius:'var(--radius)', padding:'3rem 2.5rem', boxShadow:'0 0 60px rgba(0,212,255,0.08)' }}>
           <p style={{ color:'var(--text-muted)', marginBottom:'.75rem', lineHeight:1.8 }}>{tx.body}</p>
-          <p style={{ color:'var(--text-muted)', fontSize:'.82rem', marginBottom:'2rem' }}>📍 {tx.location}</p>
+          <p style={{ color:'var(--text-muted)', fontSize:'.82rem', marginBottom:'2rem', display:'flex', alignItems:'center', gap:'.4rem', justifyContent:'center' }}><MapPin size={13} strokeWidth={2} />{tx.location}</p>
           <div style={{ display:'flex', flexDirection:'column', gap:'1rem' }}>
             {contacts.map(({ href, icon, label, value, external }) => (
               <a key={href} href={href} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined} className="contact-item"
                 style={{ display:'flex', alignItems:'center', gap:'1rem', background:'var(--bg-surface)', border:'1px solid var(--border)', borderRadius:'10px', padding:'1rem 1.25rem', textDecoration:'none', transition:'all .2s', color:'var(--text)' }}>
-                <span style={{ fontSize:'1.3rem', width:'36px', textAlign:'center', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>{icon}</span>
+                <span style={{ width:'36px', color:'var(--cyan)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>{icon}</span>
                 <div style={{ textAlign:'left' }}>
                   <div style={{ fontSize:'.8rem', color:'var(--text-muted)' }}>{label}</div>
                   <div style={{ fontWeight:600, fontSize:'.9rem' }}>{value}</div>

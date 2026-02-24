@@ -12,7 +12,7 @@ const GitHubIcon = () => (
 const projectsData = {
   fr: [
     {
-      badge: '⚙️ Embarqué · EFI Automotive',
+      badge: 'Embarqué · EFI Automotive',
       title: 'Serveur UDS sur CAN (ISO 14229)',
       desc: "Implémentation complète d'un serveur UDS sous FreeRTOS sur dsPIC33CK256MP508. Gestion mémoire optimisée, watchdog matériel, et validation ISO avec Vector CANoe.",
       tags: ['dsPIC33CK', 'FreeRTOS', 'C', 'CAN Bus', 'UDS ISO 14229', 'CANoe'],
@@ -20,7 +20,7 @@ const projectsData = {
       gh: null,
     },
     {
-      badge: '⚙️ Embarqué · Personnel',
+      badge: 'Embarqué · Personnel',
       title: 'Maquette automobile (STM32 + FreeRTOS)',
       desc: "Maquette de contrôle embarqué avec communication CAN/LIN, multitâche temps-réel FreeRTOS et optimisation énergétique sur microcontrôleur STM32.",
       tags: ['STM32', 'FreeRTOS', 'C', 'CAN Bus', 'LIN'],
@@ -28,7 +28,7 @@ const projectsData = {
       gh: 'https://github.com/FrankApala',
     },
     {
-      badge: '⚙️ Embarqué · Personnel',
+      badge: 'Embarqué · Personnel',
       title: 'Système antivol embarqué (STM32)',
       desc: "Système antivol avec détection de mouvement par accéléromètre, alertes audio via buzzer PWM et communication UART optimisée pour faible consommation.",
       tags: ['STM32', 'C', 'UART', 'PWM', 'SPI', 'Basse conso'],
@@ -36,7 +36,7 @@ const projectsData = {
       gh: 'https://github.com/FrankApala',
     },
     {
-      badge: '🐧 Linux Embarqué · Personnel',
+      badge: 'Linux Embarqué · Personnel',
       title: 'Embedded Linux avec Yocto Project',
       desc: "Construction d'une image Linux personnalisée sur Raspberry Pi : layers Yocto sur-mesure, configuration du processus de boot, intégration de drivers.",
       tags: ['Yocto Project', 'Linux', 'Raspberry Pi', 'Device Tree', 'BSP'],
@@ -44,7 +44,7 @@ const projectsData = {
       gh: 'https://github.com/FrankApala',
     },
     {
-      badge: '⚙️ Embarqué · INMAN',
+      badge: 'Embarqué · INMAN',
       title: 'Outil de test ESP32 — Douche InSens',
       desc: "Outil embarqué ESP32 pour tester et piloter le système hydraulique de la douche connectée InSens via RS232 bidirectionnel. Remplace un banc de test manuel.",
       tags: ['ESP32', 'C', 'RS232', 'UART', 'IoT'],
@@ -52,7 +52,7 @@ const projectsData = {
       gh: null,
     },
     {
-      badge: '⚙️ Embarqué · Personnel',
+      badge: 'Embarqué · Personnel',
       title: 'Application Zephyr RTOS',
       desc: "Application multitâche sous Zephyr RTOS : gestion de threads, timers, GPIO et Device Tree. Build reproductible avec west et CMake.",
       tags: ['Zephyr RTOS', 'C', 'West', 'CMake', 'Device Tree', 'GPIO'],
@@ -62,7 +62,7 @@ const projectsData = {
   ],
   en: [
     {
-      badge: '⚙️ Embedded · EFI Automotive',
+      badge: 'Embedded · EFI Automotive',
       title: 'UDS Server over CAN (ISO 14229)',
       desc: "Full UDS server implementation on FreeRTOS for dsPIC33CK256MP508. Optimised memory management, hardware watchdog, and ISO validation with Vector CANoe.",
       tags: ['dsPIC33CK', 'FreeRTOS', 'C', 'CAN Bus', 'UDS ISO 14229', 'CANoe'],
@@ -70,7 +70,7 @@ const projectsData = {
       gh: null,
     },
     {
-      badge: '⚙️ Embedded · Personal',
+      badge: 'Embedded · Personal',
       title: 'Car Model (STM32 + FreeRTOS)',
       desc: "Embedded control model with CAN/LIN communication, real-time multitasking on FreeRTOS, and power optimisation on STM32.",
       tags: ['STM32', 'FreeRTOS', 'C', 'CAN Bus', 'LIN'],
@@ -78,7 +78,7 @@ const projectsData = {
       gh: 'https://github.com/FrankApala',
     },
     {
-      badge: '⚙️ Embedded · Personal',
+      badge: 'Embedded · Personal',
       title: 'Embedded Anti-theft System (STM32)',
       desc: "Anti-theft system with accelerometer motion detection, buzzer PWM audio alerts and optimised UART for low power consumption.",
       tags: ['STM32', 'C', 'UART', 'PWM', 'SPI', 'Low Power'],
@@ -86,7 +86,7 @@ const projectsData = {
       gh: 'https://github.com/FrankApala',
     },
     {
-      badge: '🐧 Embedded Linux · Personal',
+      badge: 'Embedded Linux · Personal',
       title: 'Embedded Linux with Yocto Project',
       desc: "Custom Linux image on Raspberry Pi: custom Yocto layers, boot process configuration, driver integration and system tuning.",
       tags: ['Yocto Project', 'Linux', 'Raspberry Pi', 'Device Tree', 'BSP'],
@@ -94,7 +94,7 @@ const projectsData = {
       gh: 'https://github.com/FrankApala',
     },
     {
-      badge: '⚙️ Embedded · INMAN',
+      badge: 'Embedded · INMAN',
       title: 'ESP32 Test Tool — InSens Shower',
       desc: "ESP32 embedded tool to test and control the InSens connected shower hydraulic system over bidirectional RS232, replacing a manual test bench.",
       tags: ['ESP32', 'C', 'RS232', 'UART', 'IoT'],
@@ -102,7 +102,7 @@ const projectsData = {
       gh: null,
     },
     {
-      badge: '⚙️ Embedded · Personal',
+      badge: 'Embedded · Personal',
       title: 'Zephyr RTOS Application',
       desc: "Multithreaded application on Zephyr RTOS: thread management, timers, GPIO and Device Tree. Reproducible build with west and CMake.",
       tags: ['Zephyr RTOS', 'C', 'West', 'CMake', 'Device Tree', 'GPIO'],
@@ -113,8 +113,8 @@ const projectsData = {
 }
 
 const labels = {
-  fr: { supra: 'Ce que j\'ai construit', title: 'Projets', ask: '📩 Demander les détails', code: 'Code' },
-  en: { supra: 'What I have built', title: 'Projects', ask: '📩 Ask for details', code: 'Code' },
+  fr: { supra: "Ce que j'ai construit", title: 'Projets', ask: 'Demander les détails', code: 'Code' },
+  en: { supra: 'What I have built', title: 'Projects', ask: 'Ask for details', code: 'Code' },
 }
 
 function ProjectCard({ badge, title, desc, tags, year, gh, lbl }: { badge:string; title:string; desc:string; tags:string[]; year:string; gh:string|null; lbl: typeof labels['fr'] }) {

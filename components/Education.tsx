@@ -1,5 +1,7 @@
 'use client'
 
+import { Trophy, Medal, MapPin } from 'lucide-react'
+import type { ReactNode } from 'react'
 import ScrollReveal from './ScrollReveal'
 import { useLang } from './LangContext'
 
@@ -52,14 +54,14 @@ const educationData = {
   ],
 }
 
-const awards = {
+const awards: { fr: { icon: ReactNode; title: string; detail: string }[]; en: { icon: ReactNode; title: string; detail: string }[] } = {
   fr: [
-    { icon: '🏆', title: 'Bourse d\'excellence Eiffel', detail: '2022 – 2025' },
-    { icon: '🎖️', title: 'Bourse de coopération Tunisie–Cameroun', detail: '2019 – 2022' },
+    { icon: <Trophy size={22} />, title: "Bourse d'excellence Eiffel", detail: '2022 – 2025' },
+    { icon: <Medal size={22} />, title: 'Bourse de coopération Tunisie–Cameroun', detail: '2019 – 2022' },
   ],
   en: [
-    { icon: '🏆', title: 'Eiffel Excellence Scholarship', detail: '2022 – 2025' },
-    { icon: '🎖️', title: 'Tunisia–Cameroon Cooperation Scholarship', detail: '2019 – 2022' },
+    { icon: <Trophy size={22} />, title: 'Eiffel Excellence Scholarship', detail: '2022 – 2025' },
+    { icon: <Medal size={22} />, title: 'Tunisia–Cameroon Cooperation Scholarship', detail: '2019 – 2022' },
   ],
 }
 
@@ -138,8 +140,8 @@ export default function Education() {
                 <div style={{ fontSize: '.88rem', color: 'var(--blue-light)', fontWeight: 600 }}>
                   {edu.institution}
                 </div>
-                <div style={{ fontSize: '.8rem', color: 'var(--text-muted)', marginTop: '.2rem' }}>
-                  📍 {edu.location}
+                <div style={{ fontSize: '.8rem', color: 'var(--text-muted)', marginTop: '.2rem', display: 'flex', alignItems: 'center', gap: '.3rem' }}>
+                  <MapPin size={12} strokeWidth={2} />{edu.location}
                 </div>
               </div>
               <div
@@ -179,7 +181,7 @@ export default function Education() {
                     display: 'flex', gap: '.75rem', alignItems: 'flex-start',
                   }}
                 >
-                  <span style={{ fontSize: '1.4rem' }}>{a.icon}</span>
+                  <span style={{ color: 'var(--cyan)', display: 'flex', alignItems: 'center', flexShrink: 0 }}>{a.icon}</span>
                   <div>
                     <div style={{ fontSize: '.88rem', fontWeight: 700, color: 'var(--text)' }}>
                       {a.title}
