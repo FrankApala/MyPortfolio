@@ -134,7 +134,7 @@ export default function Hero() {
 
           {/* Photo */}
           <img
-            src="/avatar.jpeg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/avatar.jpeg`}
             alt="Ghislain Frank TONTSA APALA"
             style={{
               position: 'relative', zIndex: 1,
