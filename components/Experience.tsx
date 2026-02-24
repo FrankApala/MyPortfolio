@@ -131,6 +131,7 @@ export default function Experience() {
               }}
             >
               <div
+                className="exp-header"
                 style={{
                   display: 'flex', justifyContent: 'space-between',
                   alignItems: 'flex-start', flexWrap: 'wrap',
@@ -147,6 +148,7 @@ export default function Experience() {
                   </div>
                 </div>
                 <div
+                  className="exp-date"
                   style={{
                     fontSize: '.76rem', color: 'var(--cyan)',
                     fontFamily: 'var(--font-jetbrains, "JetBrains Mono", monospace)',
@@ -194,6 +196,17 @@ export default function Experience() {
         .exp-card:hover {
           border-color: var(--blue-border) !important;
           box-shadow: 0 8px 40px rgba(0,0,0,0.4) !important;
+        }
+        @media (max-width: 600px) {
+          .exp-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: .5rem !important;
+          }
+          .exp-date {
+            white-space: normal !important;
+            align-self: flex-start !important;
+          }
         }
       `}</style>
     </section>

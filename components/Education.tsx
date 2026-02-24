@@ -143,6 +143,7 @@ export default function Education() {
                 </div>
               </div>
               <div
+                className="edu-date"
                 style={{
                   fontSize: '.76rem', color: 'var(--cyan)',
                   fontFamily: 'var(--font-jetbrains, "JetBrains Mono", monospace)',
@@ -198,6 +199,16 @@ export default function Education() {
         .edu-card:hover {
           border-color: var(--blue-border) !important;
           box-shadow: 0 8px 40px rgba(0,0,0,0.4) !important;
+        }
+        @media (max-width: 600px) {
+          .edu-card {
+            flex-direction: column !important;
+            gap: .5rem !important;
+          }
+          .edu-card .edu-date {
+            align-self: flex-start !important;
+            white-space: normal !important;
+          }
         }
       `}</style>
     </section>
