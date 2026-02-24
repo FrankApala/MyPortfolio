@@ -163,6 +163,34 @@ export default function Hero() {
         <div style={{ width: '1px', height: '40px', background: 'linear-gradient(to bottom,var(--blue),transparent)', animation: 'scrollLine 2s ease-in-out infinite' }} />
         <span>SCROLL</span>
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          #hero {
+            flex-direction: column-reverse !important;
+            padding-top: 110px !important;
+            text-align: center !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+          }
+          .hero-text-col {
+            width: 100% !important;
+            padding-right: 0 !important;
+          }
+          .hero-buttons {
+            justify-content: center !important;
+          }
+          .hero-photo-col {
+            width: 180px !important;
+            flex-shrink: 0 !important;
+            margin-bottom: 0.5rem !important;
+          }
+          .hero-photo-col > div {
+            width: 160px !important;
+            height: 195px !important;
+          }
+        }
+      `}</style>
     </section>
   )
 }

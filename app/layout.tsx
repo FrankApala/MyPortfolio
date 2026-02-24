@@ -5,6 +5,7 @@ import ParticleCanvas from '@/components/ParticleCanvas'
 import Navbar from '@/components/Navbar'
 import ScrollProgress from '@/components/ScrollProgress'
 import SmoothScroller from '@/components/SmoothScroller'
+import BackToTop from '@/components/BackToTop'
 import { LangProvider } from '@/components/LangContext'
 
 const inter = Inter({
@@ -41,6 +42,7 @@ export default function RootLayout({
           <ParticleCanvas />
           <Navbar />
           {children}
+          <BackToTop />
         </LangProvider>
       </body>
     </html>
