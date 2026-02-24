@@ -140,20 +140,29 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div style={{ position: 'fixed', inset: 0, top: '64px', background: 'rgba(7,6,15,0.97)', backdropFilter: 'blur(20px)', zIndex: 99, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '2.5rem' }}>
+        <div style={{
+          position: 'fixed', top: '64px', left: 0, right: 0,
+          background: 'rgba(7,6,15,0.97)', backdropFilter: 'blur(20px)',
+          borderBottom: '1px solid var(--border)',
+          zIndex: 99,
+          display: 'flex', flexDirection: 'column',
+          padding: '1.25rem 5% 1.5rem',
+          gap: '0',
+          animation: 'fadeBlurIn 0.2s ease both',
+        }}>
           {[...links, { href: '#contact', fr: 'Contact', en: 'Contact', external: false }].map(({ href, fr, en, external }) => (
             <a key={href} href={href} onClick={closeMobile}
               target={external ? '_blank' : undefined}
               rel={external ? 'noopener noreferrer' : undefined}
-              style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text)', textDecoration: 'none', transition: 'color .2s' }}
-              onMouseEnter={e => ((e.target as HTMLElement).style.color = 'var(--cyan)')}
-              onMouseLeave={e => ((e.target as HTMLElement).style.color = 'var(--text)')}
+              style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-muted)', textDecoration: 'none', padding: '.75rem 0', borderBottom: '1px solid var(--border)', transition: 'color .2s' }}
+              onMouseEnter={e => ((e.target as HTMLElement).style.color = 'var(--blue-light)')}
+              onMouseLeave={e => ((e.target as HTMLElement).style.color = 'var(--text-muted)')}
             >
               {lang === 'fr' ? fr : en}
             </a>
           ))}
           <a href="https://ta-embedded.com" target="_blank" rel="noopener noreferrer" onClick={closeMobile}
-            style={{ fontSize: '1.5rem', fontWeight: 800, color: '#6ee7fa', textDecoration: 'none' }}
+            style={{ fontSize: '1rem', fontWeight: 800, color: '#d4a017', textDecoration: 'none', padding: '.75rem 0', marginTop: '.25rem' }}
           >
             TA Embedded ↗
           </a>
