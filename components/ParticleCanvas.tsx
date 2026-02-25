@@ -46,14 +46,14 @@ export default function ParticleCanvas() {
 
       // Ambient gold blob top-left
       const grd = ctx!.createRadialGradient(W * 0.15, H * 0.2, 0, W * 0.15, H * 0.2, W * 0.4)
-      grd.addColorStop(0, 'rgba(0,212,255,0.07)')
+      grd.addColorStop(0, 'rgba(14,165,233,0.07)')
       grd.addColorStop(1, 'transparent')
       ctx!.fillStyle = grd
       ctx!.fillRect(0, 0, W, H)
 
-      // Ambient amber blob bottom-right
+      // Ambient indigo blob bottom-right
       const grd2 = ctx!.createRadialGradient(W * 0.85, H * 0.7, 0, W * 0.85, H * 0.7, W * 0.35)
-      grd2.addColorStop(0, 'rgba(167,139,250,0.05)')
+      grd2.addColorStop(0, 'rgba(99,102,241,0.05)')
       grd2.addColorStop(1, 'transparent')
       ctx!.fillStyle = grd2
       ctx!.fillRect(0, 0, W, H)
@@ -66,7 +66,7 @@ export default function ParticleCanvas() {
         }
         ctx!.save()
         ctx!.globalAlpha = p.alpha
-        ctx!.fillStyle = '#00d4ff'
+        ctx!.fillStyle = '#0ea5e9'
         ctx!.beginPath()
         ctx!.arc(p.x, p.y, p.r, 0, Math.PI * 2)
         ctx!.fill()

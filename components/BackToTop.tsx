@@ -24,7 +24,7 @@ export default function BackToTop() {
         width: '46px',
         height: '46px',
         borderRadius: '50%',
-        background: 'linear-gradient(135deg, #00d4ff, #a78bfa)',
+        background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
         border: 'none',
         cursor: 'pointer',
         display: 'flex',
@@ -37,7 +37,7 @@ export default function BackToTop() {
         transition: 'opacity 0.3s ease, transform 0.3s cubic-bezier(0.16,1,0.3,1)',
       }}
     >
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07060f" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#030712" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="18 15 12 9 6 15" />
       </svg>
     </button>

@@ -119,14 +119,14 @@ export default function CVDownload() {
             className="btn-shimmer"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '.75rem',
-              background: 'linear-gradient(135deg, #00d4ff, #6ee7fa)',
-              color: '#0c0a08',
+              background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
+              color: '#f0f9ff',
               fontWeight: 800,
               fontSize: '1rem',
               padding: '1rem 2.5rem',
               borderRadius: '12px',
               textDecoration: 'none',
-              boxShadow: '0 0 40px rgba(0,212,255,0.4)',
+              boxShadow: '0 0 40px rgba(14,165,233,0.4)',
               transition: 'all .25s',
               letterSpacing: '.01em',
             }}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import ParticleCanvas from '@/components/ParticleCanvas'
 import Navbar from '@/components/Navbar'
@@ -7,6 +8,12 @@ import ScrollProgress from '@/components/ScrollProgress'
 import SmoothScroller from '@/components/SmoothScroller'
 import BackToTop from '@/components/BackToTop'
 import { LangProvider } from '@/components/LangContext'
+
+const geist = localFont({
+  src: '../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2',
+  variable: '--font-geist',
+  display: 'swap',
+})
 
 const inter = Inter({
   subsets: ['latin'],
@@ -34,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="fr" className={`${geist.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
       <body>
         <LangProvider>
           <SmoothScroller />

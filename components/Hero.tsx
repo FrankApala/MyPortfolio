@@ -69,10 +69,10 @@ export default function Hero() {
         <p style={{ maxWidth: '520px', marginBottom: '2.5rem', fontSize: '.97rem', color: 'var(--text-muted)', lineHeight: 1.85, animation: 'fadeUp .7s .3s ease both' }}>{tx.desc}</p>
 
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', animation: 'fadeUp .7s .4s ease both' }} className="hero-buttons">
-          <a href="#projects" className="btn-shimmer" style={{ background: 'linear-gradient(135deg,#00d4ff,#6ee7fa)', color: '#07060f', fontWeight: 800, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', boxShadow: '0 0 32px rgba(0,212,255,0.4)', display: 'inline-block', animation: 'glowPulse 3s ease-in-out infinite' }}>{tx.cta1}</a>
+          <a href="#projects" className="btn-shimmer" style={{ background: 'linear-gradient(135deg,#0ea5e9,#6366f1)', color: '#f0f9ff', fontWeight: 800, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', boxShadow: '0 0 32px rgba(14,165,233,0.4)', display: 'inline-block', animation: 'glowPulse 3s ease-in-out infinite' }}>{tx.cta1}</a>
           <a href="#contact" style={{ background: 'transparent', border: '1px solid var(--blue-border)', color: 'var(--blue-light)', fontWeight: 600, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', transition: 'all .25s', display: 'inline-block' }}>{tx.cta2}</a>
           <a href="/cv.pdf" download className="btn-shimmer" style={{ background: 'rgba(0,212,255,0.08)', border: '1px solid rgba(0,212,255,0.3)', color: 'var(--blue-light)', fontWeight: 600, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', transition: 'all .25s', display: 'inline-flex', alignItems: 'center', gap: '.5rem' }}>
-            <span style={{ fontSize: '1rem', animation: 'downloadBounce 2s ease-in-out infinite' }}>⬇</span>{tx.cta3}
+            <span style={{ fontSize: '1rem', animation: 'downloadBounce 2s ease-in-out infinite' }}>↓</span>{tx.cta3}
           </a>
         </div>
       </div>
@@ -104,8 +104,8 @@ export default function Hero() {
           <div style={{
             position: 'absolute', top: '50%', left: '50%',
             width: '10px', height: '10px', borderRadius: '50%',
-            background: 'linear-gradient(135deg,#00d4ff,#a78bfa)',
-            boxShadow: '0 0 16px rgba(0,212,255,1), 0 0 32px rgba(0,212,255,0.4)',
+            background: 'linear-gradient(135deg,#0ea5e9,#818cf8)',
+            boxShadow: '0 0 16px rgba(14,165,233,1), 0 0 32px rgba(14,165,233,0.4)',
             animation: 'orbitRing 5s linear infinite',
             transformOrigin: '0 0',
             marginTop: '-5px', marginLeft: '-5px',
@@ -116,8 +116,8 @@ export default function Hero() {
           <div style={{
             position: 'absolute', top: '50%', left: '50%',
             width: '7px', height: '7px', borderRadius: '50%',
-            background: 'linear-gradient(135deg,#a78bfa,#6ee7fa)',
-            boxShadow: '0 0 12px rgba(167,139,250,1)',
+            background: 'linear-gradient(135deg,#818cf8,#38bdf8)',
+            boxShadow: '0 0 12px rgba(129,140,248,1)',
             animation: 'orbitRing 8s linear infinite reverse',
             transformOrigin: '0 0',
             marginTop: '-3.5px', marginLeft: '-3.5px',
@@ -128,7 +128,7 @@ export default function Hero() {
           <div style={{
             position: 'absolute', inset: '-3px',
             borderRadius: '24px',
-            background: 'linear-gradient(135deg, #00d4ff, #a78bfa, #6ee7fa)',
+            background: 'linear-gradient(135deg, #0ea5e9, #6366f1, #38bdf8)',
             zIndex: 0,
           }} />
 
@@ -148,7 +148,7 @@ export default function Hero() {
           {/* Glass label overlay */}
           <div style={{
             position: 'absolute', bottom: 0, left: 0, right: 0, zIndex: 2,
-            background: 'linear-gradient(to top, rgba(7,6,15,0.9) 0%, transparent 100%)',
+            background: 'linear-gradient(to top, rgba(3,7,18,0.9) 0%, transparent 100%)',
             borderRadius: '0 0 22px 22px',
             padding: '2rem .8rem .7rem',
             textAlign: 'center',
