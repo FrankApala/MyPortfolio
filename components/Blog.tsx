@@ -205,7 +205,7 @@ export default function Blog() {
               {lbl.taglineDesc}
             </p>
           </div>
-          <a href="https://www.linkedin.com/company/ta-embedded/" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.ta-embedded.com" target="_blank" rel="noopener noreferrer"
             className="btn-shimmer"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '.6rem',

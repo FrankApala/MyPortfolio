@@ -7,8 +7,8 @@
   --color-blue: #0ea5e9;
   --color-blue-light: #38bdf8;
   --color-cyan: #818cf8;
-  --color-cream: #f0f9ff;
-  --color-muted: #475569;
+  --color-cream: #ffffff;
+  --color-muted: #cbd5e1;
   --color-dim: #0c1628;
   --font-sans: 'Geist', 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -23,8 +23,8 @@
   --cyan: #818cf8;
   --blue-dim: rgba(14, 165, 233, 0.10);
   --blue-border: rgba(14, 165, 233, 0.22);
-  --text: #f0f9ff;
-  --text-muted: #475569;
+  --text: #ffffff;
+  --text-muted: #cbd5e1;
   --text-dim: #0c1628;
   --border: rgba(14, 165, 233, 0.08);
   --radius: 16px;

@@ -17,9 +17,8 @@ const t = {
     stats: [
       { num: '3+', label: 'Ans d\'experience' },
       { num: '5+', label: 'Projets embarques' },
-      { num: '2', label: 'Bourses d\'excellence' },
     ],
-    langs: 'Langues : Francais (maternelle) · Anglais (courant) · Arabe (notions)',
+    langs: 'Langues : Français (maternelle) · Anglais (maternelle) · Allemand (notions)',
   },
   en: {
     supra: 'Who am I?',
@@ -34,9 +33,8 @@ const t = {
     stats: [
       { num: '3+', label: 'Years of experience' },
       { num: '5+', label: 'Embedded projects' },
-      { num: '2', label: 'Excellence scholarships' },
     ],
-    langs: 'Languages: French (native) · English (fluent) · Arabic (basics)',
+    langs: 'Languages: French (native) · English (native) · German (basics)',
   },
 }
 
