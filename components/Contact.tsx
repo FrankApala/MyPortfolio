@@ -14,13 +14,13 @@ const t = {
   fr: {
     supra: 'Travaillons ensemble',
     title: 'Me contacter',
-    body: 'Disponible pour des missions freelance, des stages ou des opportunites en CDI dans le developpement logiciel embarque. N\'hesitez pas a me contacter !',
+    body: 'Disponible pour des missions freelance et CDI. N\'hesitez pas a me contacter !',
     location: 'Lyon, France (69002) · Permis B',
   },
   en: {
     supra: "Let's work together",
     title: 'Contact me',
-    body: "Available for freelance missions, internships or full-time opportunities in embedded software engineering. Don't hesitate to reach out!",
+    body: "Available for freelance missions and full-time positions. Don't hesitate to reach out!",
     location: 'Lyon, France (69002) · Driver licence',
   },
 }

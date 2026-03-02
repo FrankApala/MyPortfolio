@@ -72,7 +72,7 @@ const posts = {
 
 const labels = {
   fr: {
-    supra: 'Ma plateforme de formation',
+    supra: 'Ma plateforme de services',
     title: 'TA Embedded',
     tagline: 'La référence francophone en formation logiciel embarqué',
     taglineDesc: 'Articles techniques, tutoriels et retours d’expérience sur le développement embarqué — FreeRTOS, Zephyr, Linux, CAN, UDS et bien plus.',
