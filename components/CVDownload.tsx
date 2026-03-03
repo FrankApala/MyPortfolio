@@ -114,7 +114,7 @@ export default function CVDownload() {
 
           {/* Download button */}
           <a
-            href="/cv.pdf"
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/cv.pdf`}
             download
             className="btn-shimmer"
             style={{
