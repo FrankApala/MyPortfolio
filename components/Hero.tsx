@@ -1,6 +1,7 @@
 ﻿'use client'
 
 import { useState } from 'react'
+import { Download } from 'lucide-react'
 import { useLang } from './LangContext'
 
 const t = {
@@ -11,7 +12,8 @@ const t = {
     desc: 'Spécialisé dans les systèmes embarqués temps-réel, les OS embarqués (FreeRTOS, Zephyr, Yocto) et les protocoles industriels. De la programmation bare-metal au driver Linux — je construis du logiciel robuste au plus près du silicium.',
     cta1: 'Voir mes projets',
     cta2: 'Me contacter',
-    cta3: 'Télécharger mon CV',
+    ctaFr: '🇫🇷 CV Français',
+    ctaEn: '🇬🇧 CV English',
   },
   en: {
     badge: 'Available for new opportunities',
@@ -20,7 +22,8 @@ const t = {
     desc: 'Specialised in real-time embedded systems, embedded OS (FreeRTOS, Zephyr, Yocto) and industrial protocols. From bare-metal firmware to Linux kernel drivers — I build reliable software close to the hardware.',
     cta1: 'View my projects',
     cta2: 'Contact me',
-    cta3: 'Download CV',
+    ctaFr: '🇫🇷 CV Français',
+    ctaEn: '🇬🇧 CV English',
   },
 }
 
@@ -71,9 +74,16 @@ export default function Hero() {
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', animation: 'fadeUp .7s .4s ease both' }} className="hero-buttons">
           <a href="#projects" className="btn-shimmer" style={{ background: 'linear-gradient(135deg,#0ea5e9,#6366f1)', color: '#f0f9ff', fontWeight: 800, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', boxShadow: '0 0 32px rgba(14,165,233,0.4)', display: 'inline-block', animation: 'glowPulse 3s ease-in-out infinite' }}>{tx.cta1}</a>
           <a href="#contact" style={{ background: 'transparent', border: '1px solid var(--blue-border)', color: 'var(--blue-light)', fontWeight: 600, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', transition: 'all .25s', display: 'inline-block' }}>{tx.cta2}</a>
-          <a href="/cv.pdf" download className="btn-shimmer" style={{ background: 'rgba(0,212,255,0.08)', border: '1px solid rgba(0,212,255,0.3)', color: 'var(--blue-light)', fontWeight: 600, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', transition: 'all .25s', display: 'inline-flex', alignItems: 'center', gap: '.5rem' }}>
-            <span style={{ fontSize: '1rem', animation: 'downloadBounce 2s ease-in-out infinite' }}>↓</span>{tx.cta3}
-          </a>
+          <div style={{ display: 'inline-flex', gap: '1rem', flexShrink: 0 }}>
+            <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/cv-fr.pdf`} download className="btn-shimmer" style={{ display: 'inline-flex', alignItems: 'center', gap: '.6rem', background: 'linear-gradient(135deg, #0ea5e9, #6366f1)', color: '#f0f9ff', fontWeight: 800, fontSize: '.95rem', padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', boxShadow: '0 0 32px rgba(14,165,233,0.4)', transition: 'all .25s', letterSpacing: '.01em' }}>
+              <span style={{ animation: 'downloadBounce 2s ease-in-out infinite', display: 'flex', alignItems: 'center' }}><Download size={18} /></span>
+              {tx.ctaFr}
+            </a>
+            <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/cv-en.pdf`} download className="btn-shimmer" style={{ display: 'inline-flex', alignItems: 'center', gap: '.6rem', background: 'linear-gradient(135deg, #0ea5e9, #6366f1)', color: '#f0f9ff', fontWeight: 800, fontSize: '.95rem', padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', boxShadow: '0 0 32px rgba(14,165,233,0.4)', transition: 'all .25s', letterSpacing: '.01em' }}>
+              <span style={{ animation: 'downloadBounce 2s ease-in-out infinite', display: 'flex', alignItems: 'center' }}><Download size={18} /></span>
+              {tx.ctaEn}
+            </a>
+          </div>
         </div>
       </div>
 
