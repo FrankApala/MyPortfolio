@@ -10,7 +10,8 @@ const t = {
     supra: 'Curriculum Vitæ',
     title: 'Télécharger mon CV',
     subtitle: 'Toutes mes expériences, formations et compétences en un seul document.',
-    btn: 'Télécharger le CV (PDF)',
+    btnFr: 'Version française',
+    btnEn: 'English version',
     note: 'Mis à jour — 2025',
     highlights: [
       { icon: <Briefcase size={18} /> as ReactNode, text: "3+ ans d'expérience embarquée" },
@@ -23,7 +24,8 @@ const t = {
     supra: 'Curriculum Vitæ',
     title: 'Download my CV',
     subtitle: 'All my experience, education and skills in one document.',
-    btn: 'Download CV (PDF)',
+    btnFr: 'Version française',
+    btnEn: 'English version',
     note: 'Updated — 2025',
     highlights: [
       { icon: <Briefcase size={18} /> as ReactNode, text: '3+ years embedded experience' },
@@ -112,28 +114,50 @@ export default function CVDownload() {
             ))}
           </div>
 
-          {/* Download button */}
-          <a
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/cv.pdf`}
-            download
-            className="btn-shimmer"
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: '.75rem',
-              background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
-              color: '#f0f9ff',
-              fontWeight: 800,
-              fontSize: '1rem',
-              padding: '1rem 2.5rem',
-              borderRadius: '12px',
-              textDecoration: 'none',
-              boxShadow: '0 0 40px rgba(14,165,233,0.4)',
-              transition: 'all .25s',
-              letterSpacing: '.01em',
-            }}
-          >
-            <span style={{ animation: 'downloadBounce 2s ease-in-out infinite', display:'flex', alignItems:'center' }}><Download size={22} /></span>
-            {tx.btn}
-          </a>
+          {/* Download buttons */}
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/cv-fr.pdf`}
+              download
+              className="btn-shimmer"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '.75rem',
+                background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
+                color: '#f0f9ff',
+                fontWeight: 800,
+                fontSize: '1rem',
+                padding: '1rem 2rem',
+                borderRadius: '12px',
+                textDecoration: 'none',
+                boxShadow: '0 0 40px rgba(14,165,233,0.4)',
+                transition: 'all .25s',
+                letterSpacing: '.01em',
+              }}
+            >
+              <span style={{ animation: 'downloadBounce 2s ease-in-out infinite', display:'flex', alignItems:'center' }}><Download size={20} /></span>
+              🇫🇷 {tx.btnFr}
+            </a>
+            <a
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/cv-en.pdf`}
+              download
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '.75rem',
+                background: 'transparent',
+                color: 'var(--cyan)',
+                fontWeight: 800,
+                fontSize: '1rem',
+                padding: '1rem 2rem',
+                borderRadius: '12px',
+                textDecoration: 'none',
+                border: '1px solid var(--blue-border)',
+                transition: 'all .25s',
+                letterSpacing: '.01em',
+              }}
+            >
+              <span style={{ animation: 'downloadBounce 2s ease-in-out infinite', display:'flex', alignItems:'center' }}><Download size={20} /></span>
+              🇬🇧 {tx.btnEn}
+            </a>
+          </div>
 
           <p style={{ marginTop: '1rem', fontSize: '.75rem', color: 'var(--text-dim)', fontStyle: 'italic' }}>{tx.note}</p>
         </div>
