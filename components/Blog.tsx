@@ -83,7 +83,7 @@ const labels = {
     readTime: 'min de lecture',
   },
   en: {
-    supra: 'My training platform',
+    supra: 'My services platform',
     title: 'TA Embedded',
     tagline: 'The reference platform for embedded software training',
     taglineDesc: 'Technical articles, tutorials and write-ups on embedded development — FreeRTOS, Zephyr, Linux, CAN, UDS and more.',
@@ -199,7 +199,6 @@ export default function Blog() {
                 <span className="text-gradient-blue">TA</span>
                 <span style={{ color: 'var(--text)' }}> Embedded</span>
               </span>
-              <span style={{ fontSize: '.7rem', fontWeight: 700, padding: '.2rem .6rem', borderRadius: '99px', background: 'rgba(249,115,22,0.15)', border: '1px solid rgba(249,115,22,0.3)', color: '#f97316' }}>Coming soon</span>
             </div>
             <p style={{ color: 'var(--text-muted)', fontSize: '.95rem', lineHeight: 1.7, maxWidth: '500px' }}>
               {lbl.taglineDesc}
