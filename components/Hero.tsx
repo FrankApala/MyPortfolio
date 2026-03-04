@@ -74,7 +74,7 @@ export default function Hero() {
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', animation: 'fadeUp .7s .4s ease both' }} className="hero-buttons">
           <a href="#projects" className="btn-shimmer" style={{ background: 'linear-gradient(135deg,#0ea5e9,#6366f1)', color: '#f0f9ff', fontWeight: 800, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', boxShadow: '0 0 32px rgba(14,165,233,0.4)', display: 'inline-block', animation: 'glowPulse 3s ease-in-out infinite' }}>{tx.cta1}</a>
           <a href="#contact" style={{ background: 'transparent', border: '1px solid var(--blue-border)', color: 'var(--blue-light)', fontWeight: 600, padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', fontSize: '.95rem', transition: 'all .25s', display: 'inline-block' }}>{tx.cta2}</a>
-          <div style={{ display: 'inline-flex', gap: '1rem', flexShrink: 0 }}>
+          <div className="hero-cv-buttons" style={{ display: 'inline-flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/cv-fr.pdf`} download className="btn-shimmer" style={{ display: 'inline-flex', alignItems: 'center', gap: '.6rem', background: 'linear-gradient(135deg, #0ea5e9, #6366f1)', color: '#f0f9ff', fontWeight: 800, fontSize: '.95rem', padding: '.75rem 2rem', borderRadius: '10px', textDecoration: 'none', boxShadow: '0 0 32px rgba(14,165,233,0.4)', transition: 'all .25s', letterSpacing: '.01em' }}>
               <span style={{ animation: 'downloadBounce 2s ease-in-out infinite', display: 'flex', alignItems: 'center' }}><Download size={18} /></span>
               {tx.ctaFr}
@@ -189,6 +189,17 @@ export default function Hero() {
           }
           .hero-buttons {
             justify-content: center !important;
+          }
+          .hero-cv-buttons {
+            width: 100% !important;
+            justify-content: center !important;
+          }
+          .hero-cv-buttons a {
+            flex: 1 1 0 !important;
+            justify-content: center !important;
+            text-align: center !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
           }
           .hero-photo-col {
             width: 180px !important;
