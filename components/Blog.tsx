@@ -5,18 +5,18 @@ import { useLang } from './LangContext'
 
 const labels = {
   fr: {
-    supra: ‘Ma plateforme de services’,
-    title: ‘TA Embedded’,
-    tagline: ‘La référence francophone en formation logiciel embarqué’,
+    supra: 'Ma plateforme de services',
+    title: 'TA Embedded',
+    tagline: 'La référence francophone en formation logiciel embarqué',
     taglineDesc: `Articles techniques, tutoriels et retours d'expérience sur le développement embarqué — FreeRTOS, Zephyr, Linux, CAN, UDS et bien plus.`,
-    visitBtn: ‘Visiter ta-embedded.com’,
+    visitBtn: 'Visiter ta-embedded.com',
   },
   en: {
-    supra: ‘My services platform’,
-    title: ‘TA Embedded’,
-    tagline: ‘The reference platform for embedded software training’,
-    taglineDesc: ‘Technical articles, tutorials and write-ups on embedded development — FreeRTOS, Zephyr, Linux, CAN, UDS and more.’,
-    visitBtn: ‘Visit ta-embedded.com’,
+    supra: 'My services platform',
+    title: 'TA Embedded',
+    tagline: 'The reference platform for embedded software training',
+    taglineDesc: 'Technical articles, tutorials and write-ups on embedded development — FreeRTOS, Zephyr, Linux, CAN, UDS and more.',
+    visitBtn: 'Visit ta-embedded.com',
   },
 }
 
@@ -71,7 +71,7 @@ export default function Blog() {
               transition: 'all .25s',
             }}
           >
-            {lbl.visitBtn} <span style={{ fontSize: '.9rem' }}>↗</span>
+            {lbl.visitBtn} <span style={{ fontSize: '.9rem' }}>?</span>
           </a>
         </div>
       </ScrollReveal>
