@@ -12,6 +12,16 @@ const GitHubIcon = () => (
 const projectsData = {
   fr: [
     {
+      badge: 'Embarqué · Impact Social · Concours',
+      title: 'NeoGuard — Berceau Intelligent IA',
+      desc: "Berceau intelligent imprime en 3D et alimente par l'IA pour la surveillance neonatale dans des cliniques a ressources limitees. Projet candidat au concours Invent the Future with Arduino UNO Q and App Lab, lance en 2026 par Arduino et Qualcomm avec Edge Impulse, Foundries, HuggingFace, SparkFun, Seeed Studio, Farnell et STMicroelectronics. Total prize pool of $20,000.",
+      tags: ['Arduino UNO Q', 'STM32', 'Embedded Linux', 'Edge Impulse', 'C', 'Python', 'Bridge RPC'],
+      year: '2026',
+      gh: null,
+      hackster: 'https://hackster.io/contests/invent-the-future-with-arduino-uno-q-and-app-lab/hardware_applications/18952',
+      status: 'En cours',
+    },
+    {
       badge: 'Embarqué · EFI Automotive',
       title: 'Serveur UDS sur CAN (ISO 14229)',
       desc: "Implémentation complète d'un serveur UDS sous FreeRTOS sur dsPIC33CK256MP508. Gestion mémoire optimisée, watchdog matériel, et validation ISO avec Vector CANoe.",
@@ -20,20 +30,20 @@ const projectsData = {
       gh: null,
     },
     {
-      badge: 'Embarqué · Personnel',
+      badge: 'Embarqué · École',
       title: 'Maquette automobile (STM32 + FreeRTOS)',
       desc: "Maquette de contrôle embarqué avec communication CAN/LIN, multitâche temps-réel FreeRTOS et optimisation énergétique sur microcontrôleur STM32.",
       tags: ['STM32', 'FreeRTOS', 'C', 'CAN Bus', 'LIN'],
       year: '2024',
-      gh: 'https://github.com/FrankApala',
+      gh: 'https://github.com/FrankApala/projet-maquette-automobile-can-lin',
     },
     {
-      badge: 'Embarqué · Personnel',
+      badge: 'Embarqué · École',
       title: 'Système antivol embarqué (STM32)',
       desc: "Système antivol avec détection de mouvement par accéléromètre, alertes audio via buzzer PWM et communication UART optimisée pour faible consommation.",
       tags: ['STM32', 'C', 'UART', 'PWM', 'SPI', 'Basse conso'],
       year: '2023',
-      gh: 'https://github.com/FrankApala',
+      gh: 'https://github.com/FrankApala/anthi-theft-system',
     },
     {
       badge: 'Linux Embarqué · Personnel',
@@ -42,6 +52,7 @@ const projectsData = {
       tags: ['Yocto Project', 'Linux', 'Raspberry Pi', 'Device Tree', 'BSP'],
       year: '2024',
       gh: 'https://github.com/FrankApala',
+      status: 'En cours',
     },
     {
       badge: 'Embarqué · INMAN',
@@ -57,10 +68,21 @@ const projectsData = {
       desc: "Application multitâche sous Zephyr RTOS : gestion de threads, timers, GPIO et Device Tree. Build reproductible avec west et CMake.",
       tags: ['Zephyr RTOS', 'C', 'West', 'CMake', 'Device Tree', 'GPIO'],
       year: '2024',
-      gh: 'https://github.com/FrankApala',
+      gh: 'https://github.com/FrankApala/zephyrproject.git',
+      status: 'En cours',
     },
   ],
   en: [
+    {
+      badge: 'Embedded · Social Impact · Contest',
+      title: 'NeoGuard — AI Neonatal Bassinet',
+      desc: "3D-printed AI-powered smart bassinet for neonatal monitoring in low-resource clinics. Candidate project in Invent the Future with Arduino UNO Q and App Lab, launched in 2026 by Arduino and Qualcomm with Edge Impulse, Foundries, HuggingFace, SparkFun, Seeed Studio, Farnell, and STMicroelectronics. Total prize pool of $20,000.",
+      tags: ['Arduino UNO Q', 'STM32', 'Embedded Linux', 'Edge Impulse', 'C', 'Python', 'Bridge RPC'],
+      year: '2026',
+      gh: null,
+      hackster: 'https://hackster.io/contests/invent-the-future-with-arduino-uno-q-and-app-lab/hardware_applications/18952',
+      status: 'In progress',
+    },
     {
       badge: 'Embedded · EFI Automotive',
       title: 'UDS Server over CAN (ISO 14229)',
@@ -70,20 +92,20 @@ const projectsData = {
       gh: null,
     },
     {
-      badge: 'Embedded · Personal',
+      badge: 'Embedded · School',
       title: 'Car Model (STM32 + FreeRTOS)',
       desc: "Embedded control model with CAN/LIN communication, real-time multitasking on FreeRTOS, and power optimisation on STM32.",
       tags: ['STM32', 'FreeRTOS', 'C', 'CAN Bus', 'LIN'],
       year: '2024',
-      gh: 'https://github.com/FrankApala',
+      gh: 'https://github.com/FrankApala/projet-maquette-automobile-can-lin',
     },
     {
-      badge: 'Embedded · Personal',
+      badge: 'Embedded · School',
       title: 'Embedded Anti-theft System (STM32)',
       desc: "Anti-theft system with accelerometer motion detection, buzzer PWM audio alerts and optimised UART for low power consumption.",
       tags: ['STM32', 'C', 'UART', 'PWM', 'SPI', 'Low Power'],
       year: '2023',
-      gh: 'https://github.com/FrankApala',
+      gh: 'https://github.com/FrankApala/anthi-theft-system',
     },
     {
       badge: 'Embedded Linux · Personal',
@@ -92,6 +114,7 @@ const projectsData = {
       tags: ['Yocto Project', 'Linux', 'Raspberry Pi', 'Device Tree', 'BSP'],
       year: '2024',
       gh: 'https://github.com/FrankApala',
+      status: 'In progress',
     },
     {
       badge: 'Embedded · INMAN',
@@ -107,7 +130,8 @@ const projectsData = {
       desc: "Multithreaded application on Zephyr RTOS: thread management, timers, GPIO and Device Tree. Reproducible build with west and CMake.",
       tags: ['Zephyr RTOS', 'C', 'West', 'CMake', 'Device Tree', 'GPIO'],
       year: '2024',
-      gh: 'https://github.com/FrankApala',
+      gh: 'https://github.com/FrankApala/zephyrproject.git',
+      status: 'In progress',
     },
   ],
 }
@@ -117,26 +141,39 @@ const labels = {
   en: { supra: 'What I have built', title: 'Projects', ask: 'Ask for details', code: 'Code' },
 }
 
-function ProjectCard({ badge, title, desc, tags, year, gh, lbl }: { badge:string; title:string; desc:string; tags:string[]; year:string; gh:string|null; lbl: typeof labels['fr'] }) {
+function ProjectCard({ badge, title, desc, tags, year, gh, lbl, hackster, status }: { badge:string; title:string; desc:string; tags:string[]; year:string; gh:string|null; lbl: typeof labels['fr']; hackster?: string; status?: string }) {
   return (
     <ScrollReveal>
       <div className="project-card card-3d" style={{ background:'var(--bg-card)', border:'1px solid var(--border)', borderRadius:'var(--radius)', padding:'2rem', position:'relative', overflow:'hidden', display:'flex', flexDirection:'column', height:'100%' }}>
         <div className="project-card-topline" style={{ position:'absolute', top:0, left:0, right:0, height:'2px', background:'linear-gradient(90deg,transparent,var(--blue),transparent)', opacity:0, transition:'opacity .3s' }} />
         <div style={{ fontSize:'.72rem', fontWeight:700, padding:'.25rem .7rem', borderRadius:'6px', marginBottom:'1.25rem', width:'fit-content', background:'rgba(0,212,255,0.10)', border:'1px solid rgba(0,212,255,0.28)', color:'#6ee7fa' }}>{badge}</div>
-        <div style={{ fontSize:'1.1rem', fontWeight:800, marginBottom:'.75rem', color:'var(--text)' }}>{title}</div>
+        <div style={{ fontSize:'1.1rem', fontWeight:800, marginBottom:'.75rem', color:'var(--text)', display:'flex', alignItems:'center', gap:'.5rem' }}>
+          {title}
+        </div>
         <p style={{ fontSize:'.88rem', color:'var(--text-muted)', lineHeight:1.8, flex:1 }}>{desc}</p>
         <div style={{ display:'flex', flexWrap:'wrap', gap:'.5rem', marginTop:'1rem' }}>
           {tags.map(t => <span key={t} style={{ fontSize:'.72rem', fontWeight:600, padding:'.25rem .65rem', borderRadius:'6px', background:'rgba(0,212,255,0.06)', border:'1px solid rgba(0,212,255,0.16)', color:'var(--text-muted)', fontFamily:'var(--font-jetbrains,"JetBrains Mono",monospace)' }}>{t}</span>)}
         </div>
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginTop:'1.5rem', paddingTop:'1rem', borderTop:'1px solid var(--border)' }}>
           <div style={{ display:'flex', gap:'.75rem' }}>
+            {hackster ? (
+              <a href={hackster} target="_blank" rel="noopener noreferrer" style={{ fontSize:'.78rem', fontWeight:600, textDecoration:'none', color:'var(--blue-light)', display:'flex', alignItems:'center', gap:'.35rem', transition:'color .2s' }}>Hackster</a>
+            ) : null}
             {gh ? (
               <a href={gh} target="_blank" rel="noopener noreferrer" style={{ fontSize:'.78rem', fontWeight:600, textDecoration:'none', color:'var(--blue-light)', display:'flex', alignItems:'center', gap:'.35rem', transition:'color .2s' }}><GitHubIcon/>{lbl.code}</a>
             ) : (
-              <a href="#contact" style={{ fontSize:'.78rem', fontWeight:600, textDecoration:'none', color:'var(--blue-light)', transition:'color .2s' }}>{lbl.ask}</a>
+              !hackster && <a href="#contact" style={{ fontSize:'.78rem', fontWeight:600, textDecoration:'none', color:'var(--blue-light)', transition:'color .2s' }}>{lbl.ask}</a>
             )}
           </div>
-          <span style={{ fontSize:'.7rem', color:'var(--text-dim)' }}>{year}</span>
+          <div style={{ display:'flex', alignItems:'center', gap:'1rem' }}>
+            {status && (
+              <span style={{ fontSize:'.9rem', fontWeight:600, color:'var(--text-muted)', display:'inline-flex', alignItems:'center', gap:'.35rem' }}>
+                <span style={{ width:'10px', height:'10px', borderRadius:'50%', background:'#f43f5e', boxShadow:'0 0 10px rgba(244,63,94,.55)' }} />
+                {status.replace('🔴 ', '')}
+              </span>
+            )}
+            <span style={{ fontSize:'.7rem', color:'var(--text-dim)' }}>{year}</span>
+          </div>
         </div>
       </div>
       <style>{'.project-card:hover .project-card-topline { opacity: 1 !important; }'}</style>

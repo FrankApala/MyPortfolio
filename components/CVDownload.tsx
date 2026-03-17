@@ -14,7 +14,7 @@ const t = {
     btnEn: 'English version',
     note: 'Mis à jour — 2025',
     highlights: [
-      { icon: <Briefcase size={18} /> as ReactNode, text: "3+ ans d'expérience embarquée" },
+      { icon: <Briefcase size={18} /> as ReactNode, text: "2+ ans d'expérience embarquée" },
       { icon: <GraduationCap size={18} /> as ReactNode, text: 'UTBM Ingénieur · ERASMUS RPTU' },
       { icon: <Trophy size={18} /> as ReactNode, text: 'Bourse Eiffel Excellence 2022–2025' },
       { icon: <Cpu size={18} /> as ReactNode, text: 'FreeRTOS · Zephyr · Yocto · STM32' },
@@ -28,7 +28,7 @@ const t = {
     btnEn: 'English version',
     note: 'Updated — 2025',
     highlights: [
-      { icon: <Briefcase size={18} /> as ReactNode, text: '3+ years embedded experience' },
+      { icon: <Briefcase size={18} /> as ReactNode, text: '2+ years embedded experience' },
       { icon: <GraduationCap size={18} /> as ReactNode, text: 'UTBM Engineering · ERASMUS RPTU' },
       { icon: <Trophy size={18} /> as ReactNode, text: 'Eiffel Excellence Scholarship 2022–2025' },
       { icon: <Cpu size={18} /> as ReactNode, text: 'FreeRTOS · Zephyr · Yocto · STM32' },

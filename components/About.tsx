@@ -15,7 +15,7 @@ const t = {
     p2c: ', le developpement de drivers Linux, la conception de BSP, et le build de distributions embarquees avec Yocto Project.',
     p3: 'Rigoureux et oriente fiabilite, je m\'epanouis dans les environnements contraints ou chaque cycle CPU et chaque octet de RAM comptent.',
     stats: [
-      { num: '3+', label: 'Ans d\'experience' },
+      { num: '2+', label: 'Ans d\'experience' },
       { num: '5+', label: 'Projets embarques' },
     ],
     langs: 'Langues : Français (maternelle) · Anglais (maternelle) · Allemand (notions)',
@@ -31,7 +31,7 @@ const t = {
     p2c: ', Linux driver development, BSP design, and building embedded distributions with Yocto Project.',
     p3: 'Detail-oriented and reliability-driven, I thrive in resource-constrained environments where every CPU cycle and every byte of RAM matters.',
     stats: [
-      { num: '3+', label: 'Years of experience' },
+      { num: '2+', label: 'Years of experience' },
       { num: '5+', label: 'Embedded projects' },
     ],
     langs: 'Languages: French (native) · English (native) · German (basics)',
