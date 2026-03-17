@@ -32,7 +32,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Ghislain Frank TONTSA APALA — Embedded Software Engineer',
   description:
-    'Portfolio of Ghislain Frank TONTSA APALA, Embedded Software Engineer specialised in real-time systems, FreeRTOS, Zephyr, Embedded Linux (Yocto), STM32, dsPIC and industrial protocols.',
+    'Portfolio of Ghislain Frank TONTSA APALA, Embedded Software Engineer specialised in bare-metal and real-time embedded systems. STM32, dsPIC, FreeRTOS, Zephyr, Embedded Linux and industrial protocols.',
 }
 
 export default function RootLayout({
