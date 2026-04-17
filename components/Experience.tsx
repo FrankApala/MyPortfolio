@@ -32,7 +32,7 @@ const experiences = {
       tags: ['IoT', 'LoRaWAN', 'JavaScript', 'Live Objects'],
     },
     {
-      role: 'Responsable de Projet IT',
+      role: 'Suiveur de Projet',
       duration: 'Mars – Août 2024 · 6 mois',
       company: 'Junior UTBM',
       location: 'Belfort, Bourgogne-Franche-Comté, France',
@@ -84,7 +84,7 @@ const experiences = {
       tags: ['IoT', 'LoRaWAN', 'JavaScript', 'Live Objects'],
     },
     {
-      role: 'IT Project Supervisor',
+      role: 'Project Supervisor',
       duration: 'Mar – Aug 2024 · 6 months',
       company: 'Junior UTBM',
       location: 'Belfort, Bourgogne-Franche-Comté, France',
