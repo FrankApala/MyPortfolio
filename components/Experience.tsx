@@ -32,6 +32,19 @@ const experiences = {
       tags: ['IoT', 'LoRaWAN', 'JavaScript', 'Live Objects'],
     },
     {
+      role: 'Responsable de Projet IT',
+      duration: 'Mars – Août 2024 · 6 mois',
+      company: 'Junior UTBM',
+      location: 'Belfort, Bourgogne-Franche-Comté, France',
+      tasks: [
+        'Analyse et rédaction de cahiers des charges pour des missions confiées par des entreprises à des étudiants UTBM.',
+        'Conception du planning projet et sélection des participants selon les profils requis.',
+        'Suivi de l\'avancement des missions via des réunions régulières avec les participants et les entreprises.',
+        'Supervision d\'une mission IoT confiée par le groupe ALSTOM.',
+      ],
+      tags: ['Gestion de projet', 'Junior-Entreprise', 'IoT', 'ALSTOM'],
+    },
+    {
       role: 'Développeur Logiciel Embarqué',
       duration: 'Septembre 2023 – Février 2024 · 6 mois',
       company: 'INMAN',
@@ -69,6 +82,19 @@ const experiences = {
         'Set up unit tests and validated received sensor frames to ensure data reliability.',
       ],
       tags: ['IoT', 'LoRaWAN', 'JavaScript', 'Live Objects'],
+    },
+    {
+      role: 'IT Project Supervisor',
+      duration: 'Mar – Aug 2024 · 6 months',
+      company: 'Junior UTBM',
+      location: 'Belfort, Bourgogne-Franche-Comté, France',
+      tasks: [
+        'Analysed and drafted technical specifications for company assignments entrusted to UTBM students.',
+        'Designed project timelines and selected participants whose profiles matched assignment requirements.',
+        'Monitored assignment progress through regular meetings with participants and client companies.',
+        'Supervised an IoT mission entrusted by the ALSTOM Group.',
+      ],
+      tags: ['Project Management', 'Junior Enterprise', 'IoT', 'ALSTOM'],
     },
     {
       role: 'Embedded Software Developer (Internship)',
