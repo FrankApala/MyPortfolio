@@ -48,9 +48,9 @@ export default function Navbar() {
           position: 'fixed', top: 0, left: 0, right: 0,
           zIndex: 100, display: 'flex', alignItems: 'center',
           justifyContent: 'space-between', padding: '0 5%', height: '64px',
-          background: 'rgba(3,7,18,0.92)', backdropFilter: 'blur(20px)',
+          background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(20px)',
           borderBottom: '1px solid var(--border)', transition: 'box-shadow .3s',
-          boxShadow: scrolled ? '0 4px 40px rgba(0,0,0,0.7), 0 1px 0 rgba(14,165,233,0.15)' : 'none',
+          boxShadow: scrolled ? '0 4px 40px rgba(15,23,42,0.10), 0 1px 0 rgba(17,24,39,0.15)' : 'none',
         }}
       >
         <a href="#hero" className="text-gradient-logo"
@@ -88,7 +88,7 @@ export default function Navbar() {
               </li>
             )
           })}
-          {/* TA Embedded — external company link */}
+          {/* TA Embedded - external company link */}
           <li>
             <a href="https://www.ta-embedded.com" target="_blank" rel="noopener noreferrer"
               className="btn-shimmer"
@@ -116,7 +116,7 @@ export default function Navbar() {
           <li>
             <a href="#contact"
               style={{ textDecoration: 'none', fontSize: '.85rem', fontWeight: 500, color: 'var(--blue-light)', background: 'var(--blue-dim)', border: '1px solid var(--blue-border)', padding: '.4rem 1.1rem', borderRadius: '8px', transition: 'background .2s' }}
-              onMouseEnter={e => ((e.currentTarget as HTMLElement).style.background = 'rgba(0,212,255,0.2)')}
+              onMouseEnter={e => ((e.currentTarget as HTMLElement).style.background = 'rgba(17,24,39,0.2)')}
               onMouseLeave={e => ((e.currentTarget as HTMLElement).style.background = 'var(--blue-dim)')}
             >
               {lang === 'fr' ? 'Contact' : 'Contact'}
@@ -142,7 +142,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div style={{
           position: 'fixed', top: '64px', left: 0, right: 0,
-          background: 'rgba(3,7,18,0.97)', backdropFilter: 'blur(20px)',
+          background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(20px)',
           borderBottom: '1px solid var(--border)',
           zIndex: 99,
           display: 'flex', flexDirection: 'column',

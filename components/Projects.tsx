@@ -13,7 +13,7 @@ const projectsData = {
   fr: [
     {
       badge: 'Embarqué · Impact Social · Concours',
-      title: 'NeoGuard — Berceau Intelligent IA',
+      title: 'NeoGuard - Berceau Intelligent IA',
       desc: "Berceau intelligent imprime en 3D et alimente par l'IA pour la surveillance neonatale dans des cliniques a ressources limitees. Projet candidat au concours Invent the Future with Arduino UNO Q and App Lab, lance en 2026 par Arduino et Qualcomm avec Edge Impulse, Foundries, HuggingFace, SparkFun, Seeed Studio, Farnell et STMicroelectronics. Total prize pool of $20,000.",
       tags: ['Arduino UNO Q', 'STM32', 'Embedded Linux', 'Edge Impulse', 'C', 'Python', 'Bridge RPC'],
       year: '2026',
@@ -56,7 +56,7 @@ const projectsData = {
     },
     {
       badge: 'Embarqué · INMAN',
-      title: 'Outil de test ESP32 — Douche InSens',
+      title: 'Outil de test ESP32 - Douche InSens',
       desc: "Outil embarqué ESP32 pour tester et piloter le système hydraulique de la douche connectée InSens via RS232 bidirectionnel. Remplace un banc de test manuel.",
       tags: ['ESP32', 'C', 'RS232', 'UART', 'IoT'],
       year: '2024',
@@ -75,7 +75,7 @@ const projectsData = {
   en: [
     {
       badge: 'Embedded · Social Impact · Contest',
-      title: 'NeoGuard — AI Neonatal Bassinet',
+      title: 'NeoGuard - AI Neonatal Bassinet',
       desc: "3D-printed AI-powered smart bassinet for neonatal monitoring in low-resource clinics. Candidate project in Invent the Future with Arduino UNO Q and App Lab, launched in 2026 by Arduino and Qualcomm with Edge Impulse, Foundries, HuggingFace, SparkFun, Seeed Studio, Farnell, and STMicroelectronics. Total prize pool of $20,000.",
       tags: ['Arduino UNO Q', 'STM32', 'Embedded Linux', 'Edge Impulse', 'C', 'Python', 'Bridge RPC'],
       year: '2026',
@@ -118,7 +118,7 @@ const projectsData = {
     },
     {
       badge: 'Embedded · INMAN',
-      title: 'ESP32 Test Tool — InSens Shower',
+      title: 'ESP32 Test Tool - InSens Shower',
       desc: "ESP32 embedded tool to test and control the InSens connected shower hydraulic system over bidirectional RS232, replacing a manual test bench.",
       tags: ['ESP32', 'C', 'RS232', 'UART', 'IoT'],
       year: '2024',
@@ -146,13 +146,13 @@ function ProjectCard({ badge, title, desc, tags, year, gh, lbl, hackster, status
     <ScrollReveal>
       <div className="project-card card-3d" style={{ background:'var(--bg-card)', border:'1px solid var(--border)', borderRadius:'var(--radius)', padding:'2rem', position:'relative', overflow:'hidden', display:'flex', flexDirection:'column', height:'100%' }}>
         <div className="project-card-topline" style={{ position:'absolute', top:0, left:0, right:0, height:'2px', background:'linear-gradient(90deg,transparent,var(--blue),transparent)', opacity:0, transition:'opacity .3s' }} />
-        <div style={{ fontSize:'.72rem', fontWeight:700, padding:'.25rem .7rem', borderRadius:'6px', marginBottom:'1.25rem', width:'fit-content', background:'rgba(0,212,255,0.10)', border:'1px solid rgba(0,212,255,0.28)', color:'#6ee7fa' }}>{badge}</div>
+        <div style={{ fontSize:'.72rem', fontWeight:700, padding:'.25rem .7rem', borderRadius:'6px', marginBottom:'1.25rem', width:'fit-content', background:'rgba(17,24,39,0.10)', border:'1px solid rgba(17,24,39,0.28)', color:'#111827' }}>{badge}</div>
         <div style={{ fontSize:'1.1rem', fontWeight:800, marginBottom:'.75rem', color:'var(--text)', display:'flex', alignItems:'center', gap:'.5rem' }}>
           {title}
         </div>
         <p style={{ fontSize:'.88rem', color:'var(--text-muted)', lineHeight:1.8, flex:1 }}>{desc}</p>
         <div style={{ display:'flex', flexWrap:'wrap', gap:'.5rem', marginTop:'1rem' }}>
-          {tags.map(t => <span key={t} style={{ fontSize:'.72rem', fontWeight:600, padding:'.25rem .65rem', borderRadius:'6px', background:'rgba(0,212,255,0.06)', border:'1px solid rgba(0,212,255,0.16)', color:'var(--text-muted)', fontFamily:'var(--font-jetbrains,"JetBrains Mono",monospace)' }}>{t}</span>)}
+          {tags.map(t => <span key={t} style={{ fontSize:'.72rem', fontWeight:600, padding:'.25rem .65rem', borderRadius:'6px', background:'rgba(17,24,39,0.06)', border:'1px solid rgba(17,24,39,0.16)', color:'var(--text-muted)', fontFamily:'var(--font-jetbrains,"JetBrains Mono",monospace)' }}>{t}</span>)}
         </div>
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginTop:'1.5rem', paddingTop:'1rem', borderTop:'1px solid var(--border)' }}>
           <div style={{ display:'flex', gap:'.75rem' }}>

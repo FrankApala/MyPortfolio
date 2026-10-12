@@ -7,7 +7,7 @@ const experiences = {
   fr: [
     {
       role: 'Développeur Logiciel Embarqué',
-      duration: 'Mars – Août 2025 · 6 mois',
+      duration: 'Mars - Août 2025 · 6 mois',
       company: 'EFI Automotive',
       location: 'Beynost, France',
       tasks: [
@@ -22,7 +22,7 @@ const experiences = {
     },
     {
       role: 'Développeur IoT Freelance',
-      duration: 'Août – Novembre 2024 · 4 mois',
+      duration: 'Août - Novembre 2024 · 4 mois',
       company: 'OXYNODE',
       location: 'Belfort, France',
       tasks: [
@@ -33,7 +33,7 @@ const experiences = {
     },
     {
       role: 'Suiveur de Projet',
-      duration: 'Mars – Août 2024 · 6 mois',
+      duration: 'Mars - Août 2024 · 6 mois',
       company: 'Junior UTBM',
       location: 'Belfort, Bourgogne-Franche-Comté, France',
       tasks: [
@@ -46,7 +46,7 @@ const experiences = {
     },
     {
       role: 'Développeur Logiciel Embarqué',
-      duration: 'Septembre 2023 – Février 2024 · 6 mois',
+      duration: 'Septembre 2023 - Février 2024 · 6 mois',
       company: 'INMAN',
       location: 'Haguenau, France',
       tasks: [
@@ -59,7 +59,7 @@ const experiences = {
   en: [
     {
       role: 'Embedded Software Developer (Internship)',
-      duration: 'Mar – Aug 2025 · 6 months',
+      duration: 'Mar - Aug 2025 · 6 months',
       company: 'EFI Automotive',
       location: 'Beynost, France',
       tasks: [
@@ -74,7 +74,7 @@ const experiences = {
     },
     {
       role: 'IoT Developer (Freelance)',
-      duration: 'Aug – Nov 2024 · 4 months',
+      duration: 'Aug - Nov 2024 · 4 months',
       company: 'OXYNODE',
       location: 'Belfort, France',
       tasks: [
@@ -85,7 +85,7 @@ const experiences = {
     },
     {
       role: 'Project Supervisor',
-      duration: 'Mar – Aug 2024 · 6 months',
+      duration: 'Mar - Aug 2024 · 6 months',
       company: 'Junior UTBM',
       location: 'Belfort, Bourgogne-Franche-Comté, France',
       tasks: [
@@ -98,7 +98,7 @@ const experiences = {
     },
     {
       role: 'Embedded Software Developer (Internship)',
-      duration: 'Sep 2023 – Feb 2024 · 6 months',
+      duration: 'Sep 2023 - Feb 2024 · 6 months',
       company: 'INMAN',
       location: 'Haguenau, France',
       tasks: [
@@ -203,8 +203,8 @@ export default function Experience() {
                     style={{
                       fontSize: '.72rem', fontWeight: 600,
                       padding: '.25rem .65rem', borderRadius: '6px',
-                      background: 'rgba(0,212,255,0.07)',
-                      border: '1px solid rgba(0,212,255,0.18)',
+                      background: 'rgba(17,24,39,0.07)',
+                      border: '1px solid rgba(17,24,39,0.18)',
                       color: 'var(--text-muted)',
                       fontFamily: 'var(--font-jetbrains, "JetBrains Mono", monospace)',
                     }}
@@ -221,7 +221,7 @@ export default function Experience() {
       <style>{`
         .exp-card:hover {
           border-color: var(--blue-border) !important;
-          box-shadow: 0 8px 40px rgba(0,0,0,0.4) !important;
+          box-shadow: 0 8px 40px rgba(15,23,42,0.12) !important;
         }
         @media (max-width: 600px) {
           .exp-header {

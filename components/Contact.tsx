@@ -41,7 +41,7 @@ export default function Contact() {
       <ScrollReveal><h2 style={{ fontSize:'clamp(2rem,4vw,3rem)', fontWeight:900, letterSpacing:'-0.03em', marginBottom:'1rem', color:'var(--text)' }}>{tx.title}</h2></ScrollReveal>
       <ScrollReveal><div style={{ width:'48px', height:'2px', background:'linear-gradient(90deg,var(--blue),transparent)', margin:'1.5rem auto' }} /></ScrollReveal>
       <ScrollReveal>
-        <div style={{ maxWidth:'600px', margin:'3rem auto 0', background:'var(--bg-card)', border:'1px solid var(--blue-border)', borderRadius:'var(--radius)', padding:'3rem 2.5rem', boxShadow:'0 0 60px rgba(0,212,255,0.08)' }}>
+        <div style={{ maxWidth:'600px', margin:'3rem auto 0', background:'var(--bg-card)', border:'1px solid var(--blue-border)', borderRadius:'var(--radius)', padding:'3rem 2.5rem', boxShadow:'0 0 60px rgba(17,24,39,0.08)' }}>
           <p style={{ color:'var(--text-muted)', marginBottom:'.75rem', lineHeight:1.8 }}>{tx.body}</p>
           <p style={{ color:'var(--text-muted)', fontSize:'.82rem', marginBottom:'2rem', display:'flex', alignItems:'center', gap:'.4rem', justifyContent:'center' }}><MapPin size={13} strokeWidth={2} />{tx.location}</p>
           <div style={{ display:'flex', flexDirection:'column', gap:'1rem' }}>

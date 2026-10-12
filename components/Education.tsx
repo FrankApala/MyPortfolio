@@ -8,47 +8,61 @@ import { useLang } from './LangContext'
 const educationData = {
   fr: [
     {
-      degree: 'Cycle Ingénieur — Informatique : Robotique et Systèmes Embarqués',
-      institution: 'Université Technologique de Belfort-Montbéliard (UTBM)',
-      location: 'Belfort, France',
-      period: 'Septembre 2022 – 2025',
+      degree: 'Mastère Spécialisé - Ingénierie des Systèmes (en cours)',
+      institution: 'ISAE-SUPAERO',
+      location: 'Toulouse, France',
+      period: 'En cours',
       highlight: true,
     },
     {
-      degree: 'Semestre d\'échange ERASMUS — Robotique et Systèmes Embarqués',
-      institution: 'RPTU Kaiserslautern',
-      location: 'Kaiserslautern, Allemagne',
-      period: 'Octobre 2024 – Mars 2025',
+      degree: 'Cycle Ingénieur - Informatique : Robotique et Systèmes Embarqués',
+      institution: 'Université Technologique de Belfort-Montbéliard (UTBM)',
+      location: 'Belfort, France',
+      period: 'Septembre 2022 - 2025',
       highlight: false,
     },
     {
-      degree: 'Licence en Informatique — Systèmes Embarqués et Mobiles',
+      degree: 'Semestre d\'échange ERASMUS - Robotique et Systèmes Embarqués',
+      institution: 'RPTU Kaiserslautern',
+      location: 'Kaiserslautern, Allemagne',
+      period: 'Octobre 2024 - Mars 2025',
+      highlight: false,
+    },
+    {
+      degree: 'Licence en Informatique - Systèmes Embarqués et Mobiles',
       institution: 'ISET Nabeul',
       location: 'Nabeul, Tunisie',
-      period: 'Septembre 2019 – Juin 2022',
+      period: 'Septembre 2019 - Juin 2022',
       highlight: false,
     },
   ],
   en: [
     {
-      degree: 'Engineering Degree — Computer Science: Robotics & Embedded Systems',
-      institution: 'Université Technologique de Belfort-Montbéliard (UTBM)',
-      location: 'Belfort, France',
-      period: 'September 2022 – 2025',
+      degree: "Advanced Master's - Systems Engineering (in progress)",
+      institution: 'ISAE-SUPAERO',
+      location: 'Toulouse, France',
+      period: 'Ongoing',
       highlight: true,
     },
     {
-      degree: 'ERASMUS Exchange Semester — Robotics & Embedded Systems',
-      institution: 'RPTU Kaiserslautern',
-      location: 'Kaiserslautern, Germany',
-      period: 'October 2024 – March 2025',
+      degree: 'Engineering Degree - Computer Science: Robotics & Embedded Systems',
+      institution: 'Université Technologique de Belfort-Montbéliard (UTBM)',
+      location: 'Belfort, France',
+      period: 'September 2022 - 2025',
       highlight: false,
     },
     {
-      degree: 'Bachelor\'s Degree — Computer Science: Embedded & Mobile Systems',
+      degree: 'ERASMUS Exchange Semester - Robotics & Embedded Systems',
+      institution: 'RPTU Kaiserslautern',
+      location: 'Kaiserslautern, Germany',
+      period: 'October 2024 - March 2025',
+      highlight: false,
+    },
+    {
+      degree: 'Bachelor\'s Degree - Computer Science: Embedded & Mobile Systems',
       institution: 'ISET Nabeul',
       location: 'Nabeul, Tunisia',
-      period: 'September 2019 – June 2022',
+      period: 'September 2019 - June 2022',
       highlight: false,
     },
   ],
@@ -56,12 +70,12 @@ const educationData = {
 
 const awards: { fr: { icon: ReactNode; title: string; detail: string }[]; en: { icon: ReactNode; title: string; detail: string }[] } = {
   fr: [
-    { icon: <Trophy size={22} />, title: "Bourse d'excellence Eiffel", detail: '2022 – 2025' },
-    { icon: <Medal size={22} />, title: 'Bourse de coopération Tunisie–Cameroun', detail: '2019 – 2022' },
+    { icon: <Trophy size={22} />, title: "Bourse d'excellence Eiffel", detail: '2022 - 2025' },
+    { icon: <Medal size={22} />, title: 'Bourse de coopération Tunisie-Cameroun', detail: '2019 - 2022' },
   ],
   en: [
-    { icon: <Trophy size={22} />, title: 'Eiffel Excellence Scholarship', detail: '2022 – 2025' },
-    { icon: <Medal size={22} />, title: 'Tunisia–Cameroon Cooperation Scholarship', detail: '2019 – 2022' },
+    { icon: <Trophy size={22} />, title: 'Eiffel Excellence Scholarship', detail: '2022 - 2025' },
+    { icon: <Medal size={22} />, title: 'Tunisia-Cameroon Cooperation Scholarship', detail: '2019 - 2022' },
   ],
 }
 
@@ -74,7 +88,7 @@ export default function Education() {
     <section
       id="education"
       className="sec"
-      style={{ background: 'linear-gradient(to bottom, transparent, rgba(0,212,255,0.025), transparent)' }}
+      style={{ background: 'linear-gradient(to bottom, transparent, rgba(17,24,39,0.025), transparent)' }}
     >
       <ScrollReveal>
         <div
@@ -109,7 +123,7 @@ export default function Education() {
               className="edu-card"
               style={{
                 background: 'var(--bg-card)',
-                border: `1px solid ${edu.highlight ? 'rgba(0,212,255,0.3)' : 'var(--border)'}`,
+                border: `1px solid ${edu.highlight ? 'rgba(17,24,39,0.3)' : 'var(--border)'}`,
                 borderRadius: 'var(--radius)',
                 padding: '1.75rem 2rem',
                 display: 'flex',
@@ -128,9 +142,9 @@ export default function Education() {
                       style={{
                         fontSize: '.68rem', fontWeight: 700,
                         padding: '.15rem .55rem', borderRadius: '6px',
-                        background: 'rgba(0,212,255,0.10)',
-                        border: '1px solid rgba(0,212,255,0.28)',
-                        color: '#6ee7fa', flexShrink: 0,
+                        background: 'rgba(17,24,39,0.10)',
+                        border: '1px solid rgba(17,24,39,0.28)',
+                        color: '#111827', flexShrink: 0,
                       }}
                     >
                       {lang === 'fr' ? 'Diplôme principal' : 'Main degree'}
@@ -200,7 +214,7 @@ export default function Education() {
       <style>{`
         .edu-card:hover {
           border-color: var(--blue-border) !important;
-          box-shadow: 0 8px 40px rgba(0,0,0,0.4) !important;
+          box-shadow: 0 8px 40px rgba(15,23,42,0.12) !important;
         }
         @media (max-width: 600px) {
           .edu-card {

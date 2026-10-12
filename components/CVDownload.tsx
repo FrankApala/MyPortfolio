@@ -12,11 +12,11 @@ const t = {
     subtitle: 'Toutes mes expériences, formations et compétences en un seul document.',
     btnFr: 'Version française',
     btnEn: 'English version',
-    note: 'Mis à jour — 2025',
+    note: 'Mis à jour - 2025',
     highlights: [
       { icon: <Briefcase size={18} /> as ReactNode, text: "2+ ans d'expérience embarquée" },
       { icon: <GraduationCap size={18} /> as ReactNode, text: 'UTBM Ingénieur · ERASMUS RPTU' },
-      { icon: <Trophy size={18} /> as ReactNode, text: 'Bourse Eiffel Excellence 2022–2025' },
+      { icon: <Trophy size={18} /> as ReactNode, text: 'Bourse Eiffel Excellence 2022-2025' },
       { icon: <Cpu size={18} /> as ReactNode, text: 'FreeRTOS · Zephyr · Yocto · STM32' },
     ],
   },
@@ -26,11 +26,11 @@ const t = {
     subtitle: 'All my experience, education and skills in one document.',
     btnFr: 'Version française',
     btnEn: 'English version',
-    note: 'Updated — 2025',
+    note: 'Updated - 2025',
     highlights: [
       { icon: <Briefcase size={18} /> as ReactNode, text: '2+ years embedded experience' },
       { icon: <GraduationCap size={18} /> as ReactNode, text: 'UTBM Engineering · ERASMUS RPTU' },
-      { icon: <Trophy size={18} /> as ReactNode, text: 'Eiffel Excellence Scholarship 2022–2025' },
+      { icon: <Trophy size={18} /> as ReactNode, text: 'Eiffel Excellence Scholarship 2022-2025' },
       { icon: <Cpu size={18} /> as ReactNode, text: 'FreeRTOS · Zephyr · Yocto · STM32' },
     ],
   },
@@ -72,7 +72,7 @@ export default function CVDownload() {
             position: 'absolute', top: '-60px', right: '-60px',
             width: '180px', height: '180px',
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(0,212,255,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(17,24,39,0.12) 0%, transparent 70%)',
             pointerEvents: 'none',
           }} />
           <div style={{
@@ -100,8 +100,8 @@ export default function CVDownload() {
                 className={`stagger-${i + 1}`}
                 style={{
                   display: 'flex', alignItems: 'center', gap: '.65rem',
-                  background: 'rgba(0,212,255,0.05)',
-                  border: '1px solid rgba(0,212,255,0.12)',
+                  background: 'rgba(17,24,39,0.05)',
+                  border: '1px solid rgba(17,24,39,0.12)',
                   borderRadius: '10px',
                   padding: '.75rem 1rem',
                   fontSize: '.82rem', color: 'var(--text-muted)',
@@ -122,14 +122,14 @@ export default function CVDownload() {
               className="btn-shimmer"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '.75rem',
-                background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
-                color: '#f0f9ff',
+                background: 'linear-gradient(135deg, #111827, #374151)',
+                color: '#ffffff',
                 fontWeight: 800,
                 fontSize: '1rem',
                 padding: '1rem 2rem',
                 borderRadius: '12px',
                 textDecoration: 'none',
-                boxShadow: '0 0 40px rgba(14,165,233,0.4)',
+                boxShadow: '0 0 40px rgba(17,24,39,0.4)',
                 transition: 'all .25s',
                 letterSpacing: '.01em',
               }}

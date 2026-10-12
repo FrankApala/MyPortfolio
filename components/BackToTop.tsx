@@ -24,20 +24,20 @@ export default function BackToTop() {
         width: '46px',
         height: '46px',
         borderRadius: '50%',
-        background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
+        background: 'linear-gradient(135deg, #111827, #374151)',
         border: 'none',
         cursor: 'pointer',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        boxShadow: '0 0 20px rgba(0,212,255,0.45), 0 4px 20px rgba(0,0,0,0.4)',
+        boxShadow: '0 0 20px rgba(17,24,39,0.45), 0 4px 20px rgba(0,0,0,0.4)',
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.8)',
         pointerEvents: visible ? 'auto' : 'none',
         transition: 'opacity 0.3s ease, transform 0.3s cubic-bezier(0.16,1,0.3,1)',
       }}
     >
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#030712" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="18 15 12 9 6 15" />
       </svg>
     </button>

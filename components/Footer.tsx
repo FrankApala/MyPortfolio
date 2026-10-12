@@ -17,7 +17,7 @@ export default function Footer() {
     >
       <p>
         {lang === 'fr' ? 'Conçu & développé par' : 'Designed & built by'}{' '}
-        <strong style={{ color: 'var(--blue-light)' }}>TONTSA APALA Ghislain Frank</strong> — 2026
+        <strong style={{ color: 'var(--blue-light)' }}>TONTSA APALA Ghislain Frank</strong> - 2026
       </p>
       <p style={{ marginTop: '.4rem', fontSize: '.72rem' }}>
         Lyon, France{' · '}

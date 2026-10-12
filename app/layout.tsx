@@ -30,7 +30,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Ghislain Frank TONTSA APALA — Embedded Software Engineer',
+  title: 'Ghislain Frank TONTSA APALA - Embedded Software Engineer',
   description:
     'Portfolio of Ghislain Frank TONTSA APALA, Embedded Software Engineer specialised in bare-metal and real-time embedded systems. STM32, dsPIC, FreeRTOS, Zephyr, Embedded Linux and industrial protocols.',
 }
@@ -41,8 +41,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className={`${geist.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
-      <body>
+    <html
+      lang="fr"
+      className={`${geist.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      suppressHydrationWarning
+    >
+      <body suppressHydrationWarning>
         <LangProvider>
           <SmoothScroller />
           <ScrollProgress />

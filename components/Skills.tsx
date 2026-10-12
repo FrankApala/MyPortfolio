@@ -37,7 +37,7 @@ function SkillCard({ icon, title, tags }: { icon: ReactNode; title: string; tags
         <h3 style={{ fontSize:'1rem', fontWeight:700, marginBottom:'1rem', color:'var(--text)' }}>{title}</h3>
         <div style={{ display:'flex', flexWrap:'wrap', gap:'.5rem', marginTop:'.75rem' }}>
           {tags.map((tag, i) => (
-            <span key={tag} className={`tag-animated stagger-${Math.min(i + 1, 6)}`} style={{ fontSize:'.72rem', fontWeight:600, padding:'.25rem .65rem', borderRadius:'6px', background:'rgba(0,212,255,0.06)', border:'1px solid rgba(0,212,255,0.16)', color:'var(--text-muted)', fontFamily:'var(--font-jetbrains,"JetBrains Mono",monospace)' }}>{tag}</span>
+            <span key={tag} className={`tag-animated stagger-${Math.min(i + 1, 6)}`} style={{ fontSize:'.72rem', fontWeight:600, padding:'.25rem .65rem', borderRadius:'6px', background:'rgba(17,24,39,0.06)', border:'1px solid rgba(17,24,39,0.16)', color:'var(--text-muted)', fontFamily:'var(--font-jetbrains,"JetBrains Mono",monospace)' }}>{tag}</span>
           ))}
         </div>
       </div>
@@ -50,14 +50,14 @@ export default function Skills() {
   const lbl = labels[lang]
   const skills = skillsData[lang]
   return (
-    <section id="skills" className="sec" style={{ background: 'linear-gradient(to bottom,transparent,rgba(0,212,255,0.025),transparent)' }}>
+    <section id="skills" className="sec" style={{ background: 'linear-gradient(to bottom,transparent,rgba(17,24,39,0.025),transparent)' }}>
       <ScrollReveal><div style={{ fontSize:'.75rem', fontWeight:700, letterSpacing:'.15em', color:'var(--cyan)', textTransform:'uppercase', marginBottom:'.75rem' }}>{lbl.supra}</div></ScrollReveal>
       <ScrollReveal><h2 style={{ fontSize:'clamp(2rem,4vw,3rem)', fontWeight:900, letterSpacing:'-0.03em', marginBottom:'1rem', color:'var(--text)' }}>{lbl.title}</h2></ScrollReveal>
       <ScrollReveal><div style={{ width:'48px', height:'2px', background:'linear-gradient(90deg,var(--blue),transparent)', margin:'1.5rem 0' }} /></ScrollReveal>
       <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:'1.5rem', maxWidth:'1100px', margin:'3rem auto 0' }}>
         {skills.map(s => <SkillCard key={s.title} {...s} />)}
       </div>
-      <style>{'.skill-card:hover { border-color: var(--blue-border) !important; box-shadow: 0 8px 40px rgba(0,0,0,0.5),0 0 30px rgba(0,212,255,0.1) !important; transform: translateY(-4px) !important; }'}</style>
+      <style>{'.skill-card:hover { border-color: var(--blue-border) !important; box-shadow: 0 8px 40px rgba(15,23,42,0.12),0 0 30px rgba(17,24,39,0.1) !important; transform: translateY(-4px) !important; }'}</style>
     </section>
   )
 }
