@@ -6,7 +6,7 @@ import { useLang } from './LangContext'
 const t = {
   fr: {
     subtitle: 'Ingénieur Logiciel Embarqué · Ingénieur Systèmes',
-    desc: 'Spécialisé dans les systèmes bare-metal et temps-réel embarqués. De la programmation bas niveau aux protocoles industriels - je construis du logiciel robuste et efficace au plus près du silicium.',
+    desc: 'Ingénieur logiciel embarqué, en Mastère Spécialisé en Ingénierie des Systèmes à l\'ISAE-SUPAERO. Du firmware bas niveau à l\'architecture système complète - je conçois des systèmes fiables et robustes, du besoin à l\'intégration.',
     cta1: 'Voir mes projets',
     cta2: 'Me contacter',
     ctaFr: 'CV Français',
@@ -14,7 +14,7 @@ const t = {
   },
   en: {
     subtitle: 'Embedded Software Engineer · Systems Engineer',
-    desc: 'Specialised in bare-metal and real-time embedded systems. From low-level firmware to industrial protocols - I build reliable, efficient software close to the hardware.',
+    desc: 'Embedded software engineer pursuing an Advanced Master\'s in Systems Engineering at ISAE-SUPAERO. From low-level firmware to full system architecture - I design reliable, robust systems from requirements to integration.',
     cta1: 'View my projects',
     cta2: 'Contact me',
     ctaFr: 'CV Français',
