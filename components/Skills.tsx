@@ -1,7 +1,7 @@
 ﻿'use client'
 
 import type { ReactNode } from 'react'
-import { Cpu, Terminal, Radio, Bug, Wrench, CircuitBoard } from 'lucide-react'
+import { Cpu, Terminal, Radio, Bug, Wrench, CircuitBoard, Layers } from 'lucide-react'
 import ScrollReveal from './ScrollReveal'
 import { useLang } from './LangContext'
 
@@ -13,6 +13,7 @@ const skillsData: { fr: { icon: ReactNode; title: string; tags: string[] }[]; en
     { icon: <Bug size={20} />, title: 'Debug & Test', tags: ['GDB', 'Oscilloscope', 'Vector CANoe', 'MPLAB ICD', 'Tests unitaires', 'Analyse de trames'] },
     { icon: <Wrench size={20} />, title: 'Build & Outils', tags: ['Makefile', 'CMake', 'Git', 'STM32CubeIDE', 'MPLAB X', 'Python', 'Java'] },
     { icon: <CircuitBoard size={20} />, title: 'Architectures Matérielles', tags: ['ARM Cortex-M', 'ARM Cortex-A', 'PIC 8/16/32-bit', 'Raspberry Pi', 'IoT'] },
+    { icon: <Layers size={20} />, title: 'Ingénierie des Systèmes', tags: ['Ingénierie des exigences', 'MBSE', 'SysML', 'Cycle en V', 'Architecture système', 'Vérification & Validation', 'Gestion des interfaces', 'Analyse fonctionnelle'] },
   ],
   en: [
     { icon: <Cpu size={20} />, title: 'Embedded Systems', tags: ['C / C++', 'STM32', 'ESP32', 'dsPIC33CK', 'PIC18F', 'FreeRTOS', 'Zephyr RTOS', 'Bare-metal'] },
@@ -21,6 +22,7 @@ const skillsData: { fr: { icon: ReactNode; title: string; tags: string[] }[]; en
     { icon: <Bug size={20} />, title: 'Debug & Testing', tags: ['GDB', 'Oscilloscope', 'Vector CANoe', 'MPLAB ICD', 'Unit testing', 'Frame analysis'] },
     { icon: <Wrench size={20} />, title: 'Build & Toolchain', tags: ['Makefile', 'CMake', 'Git', 'STM32CubeIDE', 'MPLAB X', 'Python', 'Java'] },
     { icon: <CircuitBoard size={20} />, title: 'Hardware Architectures', tags: ['ARM Cortex-M', 'ARM Cortex-A', 'PIC 8/16/32-bit', 'Raspberry Pi', 'IoT'] },
+    { icon: <Layers size={20} />, title: 'Systems Engineering', tags: ['Requirements Engineering', 'MBSE', 'SysML', 'V-Model', 'System Architecture', 'Verification & Validation', 'Interface Management', 'Functional Analysis'] },
   ],
 }
 

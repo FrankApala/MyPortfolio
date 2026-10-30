@@ -7,10 +7,8 @@ const t = {
   fr: {
     supra: 'Qui suis-je ?',
     title: 'A propos de moi',
-    p1a: 'Ingenieur logiciel embarque diplome de l\'UTBM (cycle ingenieur Robotique & Systemes Embarques), specialise dans les systemes',
-    p1b: 'Linux temps-reel, FreeRTOS et Zephyr RTOS',
-    p1c: 'ainsi que les protocoles industriels (CAN, UART, SPI, I2C). Laureat de la bourse d\'excellence Eiffel 2022-2025.',
-    p3: 'Rigoureux et oriente fiabilite, je m\'epanouis dans les environnements contraints ou chaque cycle CPU et chaque octet de RAM comptent.',
+    p1a: 'Ingenieur logiciel embarque diplome de l\'UTBM (cycle ingenieur Robotique & Systemes Embarques), actuellement en Mastere Specialise en Ingenierie des Systemes a l\'ISAE-SUPAERO / TSAAE.',
+    p3: 'Rigoureux et oriente fiabilite, je m\'epanouis dans les environnements contraints ou chaque cycle CPU et chaque octet de RAM comptent. Mon mastere me permet d\'elargir cette expertise a la conception de systemes complexes, de l\'ingenierie des exigences a l\'integration.',
     stats: [
       { num: '2+', label: 'Ans d\'experience' },
       { num: '5+', label: 'Projets embarques' },
@@ -20,10 +18,8 @@ const t = {
   en: {
     supra: 'Who am I?',
     title: 'About me',
-    p1a: 'Embedded Software Engineer graduated from UTBM (Engineering degree in Robotics & Embedded Systems), specialised in',
-    p1b: 'real-time Linux, FreeRTOS and Zephyr RTOS',
-    p1c: 'and industrial protocols (CAN, UART, SPI, I2C). Recipient of the Eiffel Excellence Scholarship 2022-2025.',
-    p3: 'Detail-oriented and reliability-driven, I thrive in resource-constrained environments where every CPU cycle and every byte of RAM matters.',
+    p1a: 'Embedded Software Engineer graduated from UTBM (Engineering degree in Robotics & Embedded Systems), currently pursuing an Advanced Master\'s in Systems Engineering at ISAE-SUPAERO / TSAAE.',
+    p3: 'Detail-oriented and reliability-driven, I thrive in resource-constrained environments where every CPU cycle and every byte of RAM matters. My master\'s broadens this expertise to the design of complex systems, from requirements engineering to integration.',
     stats: [
       { num: '2+', label: 'Years of experience' },
       { num: '5+', label: 'Embedded projects' },
@@ -43,7 +39,7 @@ export default function About() {
       <div style={{ maxWidth: '820px', margin: '3rem auto 0' }}>
         <ScrollReveal>
           <div>
-            <p style={{ color:'var(--text-muted)', lineHeight:1.9, marginBottom:'1rem' }}>{tx.p1a} <strong style={{ color:'var(--blue-light)' }}>{tx.p1b}</strong> {tx.p1c}</p>
+            <p style={{ color:'var(--text-muted)', lineHeight:1.9, marginBottom:'1rem' }}>{tx.p1a}</p>
             <p style={{ color:'var(--text-muted)', lineHeight:1.9, marginBottom:'1rem' }}>{tx.p3}</p>
             <p style={{ color:'var(--text-muted)', fontSize:'.82rem', marginTop:'1.5rem', fontStyle:'italic' }}>{tx.langs}</p>
             <div style={{ display:'flex', gap:'1.5rem', flexWrap:'wrap', marginTop:'2rem' }}>

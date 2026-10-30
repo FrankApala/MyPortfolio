@@ -9,7 +9,7 @@ const educationData = {
   fr: [
     {
       degree: 'Mastère Spécialisé - Ingénierie des Systèmes (en cours)',
-      institution: 'ISAE-SUPAERO',
+      institution: 'ISAE-SUPAERO / TSAAE (Toulouse School of Aviation and Aerospace Engineering)',
       location: 'Toulouse, France',
       period: 'En cours',
       highlight: true,
@@ -39,7 +39,7 @@ const educationData = {
   en: [
     {
       degree: "Advanced Master's - Systems Engineering (in progress)",
-      institution: 'ISAE-SUPAERO',
+      institution: 'ISAE-SUPAERO / TSAAE (Toulouse School of Aviation and Aerospace Engineering)',
       location: 'Toulouse, France',
       period: 'Ongoing',
       highlight: true,
